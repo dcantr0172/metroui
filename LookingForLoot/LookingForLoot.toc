@@ -1,0 +1,17 @@
+## Interface: 40300
+## Title: LookingForLoot
+## Notes: A loot roll summariser
+## Author: Rawlex
+## Version: 1.6
+## SavedVariables: LookingForLootDb
+## Dependencies: Wowshell
+## X-Revision: WoWShell
+## X-Category: Raid
+
+## X-TipMemory:Low
+## X-TipSuggest:不是经常打副本的玩家建议禁用此插件
+## X-PY:shiquzengqiang
+
+LookingForLootRollFrame.xml
+LookingForLootOptionsFrame.xml
+LookingForLoot.lua

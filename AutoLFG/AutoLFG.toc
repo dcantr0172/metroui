@@ -1,0 +1,20 @@
+## Interface: 40300
+## Title: AutoLFG
+## Title-zhCN: 随机副本增强
+## Title-zhTW: 隨機副本增強
+## Notes: Extra feature for LFG
+## Notes-zhCN: 为随机副本加入离开倒计时 并且可以自动忽略非新进度的副本
+## Author: susnow
+## SavedVariables: AutoLFGDB
+## Dependencies: Wowshell
+## X-Revision: WoWShell
+## X-Category: Raid
+## X-TipMemory:Low
+## X-PY:suijibenzhushou
+
+
+locale\zhCN.lua
+locale\zhTW.lua
+locale\enUS.lua
+core.lua
+

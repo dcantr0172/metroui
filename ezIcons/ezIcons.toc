@@ -1,0 +1,24 @@
+## Interface: 40300
+## Title: ezIcons
+## Title-zhCN:|cFF33A2F7[|r|cFFFF7979战斗|r|cFF34A2F7]|r标记助手
+## Title-zhTW: |cFF33A2F7[|r|cFFFF7979戰斗|r|cFF34A2F7]|r標記助手
+## Notes: Raid Icon Targeting Mod
+## Notes-zhCN: 团队标记助手
+## Notes-zhTW: 團隊標記助手
+## Author: Rhaene, 月色狼影@cwdg
+## DefaultState: enabled
+## X-Revision: WoWShell
+## LoadOnDemand: 0
+## SavedVariables: ezIconsDB
+## OptionalDeps: WoWShell, Ace3
+## X-Category: Raid
+## Version: 2.0
+
+## X-TipMemory:Low
+## X-PY:biaojizhushou
+
+locale\enUS.lua
+locale\zhCN.lua
+locale\zhTW.lua
+
+ezIcons.lua

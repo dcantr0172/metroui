@@ -1,0 +1,27 @@
+## Interface: 40300
+## Title: CoolLine
+## Notes: Shows cooldowns on a single bar.
+## Author: TotalPackage
+## Version: 4.1.001
+
+## SavedVariables: CoolLineDB
+## SavedVariablesPerCharacter: CoolLineCharDB
+
+## OptionalDeps: Wowshell, LibSharedMedia-3.0
+
+#### LoadManagers: AddonLoader
+#### X-LoadOn-Always: delayed
+
+## Title-zhCN: 流线型法术冷却
+## Notes-zhCN: 在界面上显示一个有时间刻度的法术计时条
+## TItle-zhTW: 流線型法術冷卻
+## Notes-zhTW: 在界面上顯示一個有時間刻度的法術計時條
+
+## X-Revision: WoWShell
+## X-Category: Combat, Buffs & Debuffs
+
+## X-TipMemory:Low
+## X-PY:liuxianxingfashulengque
+
+embeds.xml
+core.lua

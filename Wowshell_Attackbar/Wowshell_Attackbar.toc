@@ -1,0 +1,23 @@
+﻿## Interface: 40300
+## Title: |cFF33A2F7[|r|cFFFF7979COMBAT|r|cFF34A2F7]|rAttackbar
+## Title-zhCN: |cFF33A2F7[|r|cFFFF7979战斗|r|cFF34A2F7]|r攻击记时条
+## Title-zhTW: |cFF33A2F7[|r|cFFFF7979戰斗|r|cFF34A2F7]|r攻擊計時條
+## Notes: Display attack bar
+## Notes-zhCN: 攻击记时条
+## Notes-zhCN: 攻擊計時條
+## Author: 月色狼影
+## SavedVariables: AttackbarDB
+## Dependencies: Wowshell
+## X-Revision: WoWShell
+## X-Category: Combat,_Wowshell
+## DefaultState: disabled
+
+## X-TipMemory:Low
+## X-TipSuggest:建议非近战职业禁用此插件
+## X-PY:gongjijishitiao
+
+locale\zhCN.lua
+locale\zhTW.lua
+locale\enUS.lua
+
+attackbar.lua

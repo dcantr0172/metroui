@@ -1,0 +1,12 @@
+## Interface: 40300
+## Title: Dominos Totems
+## Title: 多米诺动作条 图腾
+## Title: 多米諾動作條 圖騰
+## Notes: Totem bars for Shamans
+## Author: Tuller
+## Dependencies: Dominos
+## DefaultState: disabled
+## X-Revision: WoWShell
+## X-Category: Action Bars
+spellButton.lua
+totemBar2.lua

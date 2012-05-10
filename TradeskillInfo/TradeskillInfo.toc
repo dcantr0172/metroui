@@ -1,0 +1,41 @@
+## Interface: 40300
+## Title: TradeSkill Info
+## Title-zhCN: 商业技能百科
+## Title-zhTW: 商業技能百科
+## Notes: Complete Tradeskill Info
+## Notes-zhTW: 完整的商業技能百科
+## Notes-zhCN: 完整的商业技能百科
+## Author: wmrojer
+## eMail: evenue.wow@gmail.com
+## X-eMail: evenue.wow@gmail.com
+## X-Curse-Packaged-Version: v2.1.2
+## X-Curse-Project-Name: TradeskillInfo
+## X-Curse-Project-ID: tradeskill-info
+## X-Curse-Repository-ID: wow/tradeskill-info/mainline
+## X-Category: Professions
+## X-Revision: WoWShell
+## Dependencies: Wowshell
+## LoadOnDemand: 1
+## DefaultState: disabled
+
+
+## OptionalDeps: Wowshell, Ace3, LibStub, CallbackHandler-1.0, LibAbacus-3.0, LibBabble-Zone-3.0, LibBabble-Faction-3.0, LibDataBroker-1.1, Auc-Advanced
+## SavedVariables: TradeskillInfoDB, TradeskillInfoUIDB
+
+## X-TipMemory:High
+## X-TipSuggest:不经常使用商业技能的玩家建议禁用此插件
+## X-PY:shangyejinengbaike
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+locale-enUS.lua
+locale-zhCN.lua
+locale-zhTW.lua
+
+TradeskillInfo.lua
+
+TradeskillIdData.lua
+TradeskillData.lua
+

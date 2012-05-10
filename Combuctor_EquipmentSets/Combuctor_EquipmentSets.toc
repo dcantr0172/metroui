@@ -1,0 +1,13 @@
+## Interface: 40300
+## Name: Combuctor: Equipment Sets
+## Title-zhCN: 整合背包: 装备管理
+## Notes: Creates a Combuctor sub-set to the Equipment tab for items saved via the Blizzard Equipment Manager.
+## Notes-zhCN: 在整合背包上增加一个新的tab用于管理自带一键换装的装备.
+## Version: 1.1
+## Author: Seerah
+## Dependencies: Combuctor
+## OptionalDeps: Combuctor_Sets
+## SavedVariables: CESDB
+## X-Revision: WoWShell
+
+CES.lua

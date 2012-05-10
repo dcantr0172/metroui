@@ -1,0 +1,30 @@
+## Interface: 40300
+## Title: wsSkyer
+## Title-zhCN: 精灵额外动作条
+## Notes-zhCN: 能定制120个额外按钮的动作条插件.各种样式随心所欲.
+## Title-zhTW: 精靈額外動作條
+## Notes-zhTW: 能定制120個額外按鈕的動作條插件.
+## SavedVariables: SkylarkDB
+## Version: 2.0
+## Dependencies: WoWShell
+## X-Category: Action Bars,_Wowshell
+## X-Revision: WoWShell
+
+## X-TipMemory:Middle
+## X-TipSuggest:如果你常用技能不多的话建议禁用此插件来保持界面的清爽
+## X-PY:ewaidongzuotiao
+
+locale\zhCN.lua
+locale\zhTW.lua
+locale\enUS.lua
+
+SimpleSticky.lua
+
+wsSkyer.lua
+Bar.lua
+ActionButton.lua
+ButtonBar.lua
+ActionBar.lua
+ExtraBars.lua
+
+Option.lua

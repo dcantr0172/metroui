@@ -1,0 +1,22 @@
+## Interface: 40300
+## Dependencies: Wowshell
+## Title: |cFF34A2F7[|r|cFFFFFFFFITEM|r|cFF34A2F7]|rBagStatus
+## Title-zhCN: |cFF34A2F7[|r|cFFFFFFFF物品|r|cFF34A2F7]|r背包状态
+## Title-zhTW: |cFF34A2F7[|r|cFFFFFFFF物品|r|cFF34A2F7]|r背包狀態
+## Notes: Show inventory status
+## Notes-zhCN: 显示各个背包的剩余格数以及背包在设定环境下自动打开
+## Notes-zhTW: 顯示各個背包的剩余格數以及背包在指定環境下自動打開
+## SavedVariables: BagStatusDB
+## X-Revision: WoWShell
+## X-Category: Bags & Inventory,_Wowshell
+
+## X-PY:beibaozhuangtai
+
+## X-TipMemory:Low
+
+locale\zhCN.lua
+locale\enUS.lua
+locale\zhTW.lua
+
+core.lua
+options.lua

@@ -1,0 +1,23 @@
+## Interface: 40300
+## Version: 09.12.16
+## Title: Examiner
+## Title-zhCN: 属性查看
+## Title-zhTW: 屬性查看
+## Author: Aezay (Earthen Ring EU), Wolftankk
+## Notes: Advanced Inspection Mod of Gear, Talents, Honor, Arena and Achievements.
+## Notes-zhCN: 可以查看装备套装, 天赋, 荣誉, 竞技场以及成就详细数据
+## Notes-zhTW: 可以查看裝備套裝, 天賦, 榮譽, 競技場以及成就詳細數據
+## SavedVariables: Examiner_Config, Examiner_Cache
+## Dependencies: Wowshell
+## X-Revision: WoWShell
+## X-Category: Miscellaneous
+
+## X-TipMemory:Low
+## X-PY:shuxingchakan
+
+
+locale_enUS.lua
+locale_zhCN.lua
+locale_zhTW.lua
+#Examiner.xml
+

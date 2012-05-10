@@ -1,0 +1,23 @@
+## Interface: 40300
+## Title: GearScoreLite
+## Title-zhCN: 装备评分(GearScoreLite)
+## Title-zhTW: 装备評分(GearScoreLite)
+## Notes: Quickly and easily judge a player's level of Gear.
+## Notes-zhCN: 快速计算玩家的装备分数
+## Notes-zhTW: 快速計算玩家的裝備分數
+
+## Version: 3x03
+## Author: Mirrikat45
+## SavedVariables: GS_Settings
+## Dependencies: Wowshell
+## X-Revision: WoWShell
+## X-Category: Item
+
+## X-TipMemory:Middle
+## X-TipSuggest:只看装备等级的玩家建议禁用此插件
+## X-PY:zhuangbeipingfen
+
+LibInspectLess-1.0\libs.xml
+
+informationLite.lua
+GearScoreLite.lua

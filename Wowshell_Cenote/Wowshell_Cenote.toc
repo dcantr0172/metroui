@@ -1,0 +1,17 @@
+﻿## Interface: 40300
+## Title: Cenote
+## Title-zhCN: 法术特效计时器
+## Title-zhTW: 法術特效計時器
+## Version: 4.0.3.2
+
+## LoadOnDemand: 1
+## LoadWith: Wowshell
+## DefaultState: disabled
+## RequiredDeps: Wowshell
+## X-Revision: WoWShell
+## X-Category: Buffs & Debuffs, _Wowshell
+
+## X-TipMemory:Middle
+## X-PY:fashutexiaojishiqi
+core.lua
+

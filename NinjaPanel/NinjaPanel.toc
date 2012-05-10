@@ -1,0 +1,36 @@
+## Interface: 40300
+## Title: NinjaPanel
+## Title-zhCN: 忍者信息条
+## Title-zhTW: 忍者信息條
+## Author: Cladhaire
+## Version: v40000-1.0.0
+## Notes: A simple no-frills top panel for data broker feeds
+## SavedVariables: NinjaPanelDB
+#### SavedVariablesPerCharacter:
+
+## X-Revision: WoWShell
+## Dependencies: WoWShell
+## X-TipMemory: Middle
+
+## X-PY:renzhexinxitiao
+
+#### LoadManagers: AddonLoader
+#### X-LoadOn-Always: delayed
+## X-Category: Data Broker
+#Libs\LibStub.lua
+#Libs\CallbackHandler-1.0.lua
+Libs\LibDataBroker-1.1.lua
+Libs\LibJostle-3.0.lua
+Libs\tekKonfigAboutPanel.lua
+Libs\tekKonfigScroll.lua
+NinjaPanel.lua
+
+#Brokers\Broker_Currency\Broker_Currency.lua
+
+Brokers\Broker_Equipment.lua
+Brokers\picoEXP.lua
+Brokers\Broker_Location.lua
+#Brokers\Broker_Clock.lua
+Brokers\Broker_Mail.lua
+Brokers\Broker_WorldPVPTimer.lua
+Brokers\pStats.lua

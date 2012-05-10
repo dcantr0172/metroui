@@ -1,0 +1,29 @@
+## Interface: 40300
+## Title: QuestHubber
+## Author: pigmonkey
+## Notes: Pins on the World Map for quests you have not completed yet
+## Title-zhTW: QuestHubber [任務探索]
+## Notes-zhTW: 在世界地圖上，標記你尚未完成的任務。
+## Title-zhCN: QuestHubber [任务探索]
+## Notes-zhCN: 在世界地图上，标记你尚未完成的任务。
+## SavedVariables: QuestHubberDB
+## X-Category: Quest
+## X-Curse-Packaged-Version: v1
+## X-Curse-Project-Name: QuestHubber
+## X-Curse-Project-ID: questhubber
+## X-Curse-Repository-ID: wow/questhubber/mainline
+## OptionalDeps: Wowshell
+## X-Revision: WoWShell
+
+## X-TipMemory:High
+## X-TipSuggest: 博学者建议禁用此插件 不怎么做任务的玩家建议禁用此插件
+## X-PY:renwuzhushou
+
+Libs\LibGratuity-3.0\lib.xml
+
+
+Locale\enUS.lua
+Locale\zhCN.lua
+Locale\zhTW.lua
+
+QuestHubber.lua

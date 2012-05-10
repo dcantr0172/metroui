@@ -1,0 +1,56 @@
+﻿## Interface: 40300
+## Title: HandyNotes
+## Notes: Handy notes for your maps
+## Author: Xinhuan
+## Version: 1.2.0
+## DefaultState: enabled
+## X-Category: Map
+## X-eMail: xinhuan @ gmail DOT com
+## OptionalDeps: Ace3, TomTom
+## X-Curse-Packaged-Version: r226
+## X-Curse-Project-Name: HandyNotes
+## X-Curse-Project-ID: handynotes
+## X-Curse-Repository-ID: wow/handynotes/mainline
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+## Title-zhCN: 地图标记 [核心]
+## Title-zhTW: 地圖標記 [核心]
+## Notes-zhCN: 在地图上显示NPC标记等信息
+## Notes-zhTW: 在地圖上顯示NPC標記等信息
+
+## Deps: Wowshell
+## X-Revision: WoWShell
+
+## X-TipMemory:High
+## X-TipSuggest:希望保持大地图视图清爽的玩家建议禁用此插件直接使用暴雪自带的追踪功能
+## X-PY:ditubiaoji
+
+## SavedVariables: HandyNotesDB, HandyNotes_HandyNotesDB
+
+# Library files
+##@no-lib-strip@
+#Libs\LibStub\LibStub.lua
+#Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+#Libs\AceAddon-3.0\AceAddon-3.0.xml
+#Libs\AceEvent-3.0\AceEvent-3.0.xml
+#Libs\AceDB-3.0\AceDB-3.0.xml
+#Libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+#Libs\AceLocale-3.0\AceLocale-3.0.xml
+#Libs\AceGUI-3.0\AceGUI-3.0.xml
+#Libs\AceConsole-3.0\AceConsole-3.0.xml
+#Libs\AceConfig-3.0\AceConfig-3.0.xml
+#Libs\AceHook-3.0\AceHook-3.0.xml
+##@end-no-lib-strip@
+#Libs\Astrolabe\Load.xml
+
+# Locale files
+Locales\Locale-enUS.lua
+Locales\Locale-zhCN.lua
+Locales\Locale-zhTW.lua
+
+# Core files
+HandyNotes.lua
+HandyNotes_HandyNotes.lua
+HandyNotes_EditFrame.lua

@@ -1,0 +1,14 @@
+## Interface: 40300
+## Title: Dominos XP
+## Title-zhCN: 多米诺动作条 经验条
+## Title-zhCN: 多米諾動作條 經驗條
+## Notes: A movable experience/reputation bar
+## Author: Tuller
+## Dependencies: Dominos
+## OptionalDeps: LibSharedMedia-3.0
+## DefaultState: disabled
+## X-Revision: WoWShell
+## X-Category: Action Bars
+embeds.xml
+localization.xml
+xp.lua

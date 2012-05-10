@@ -1,0 +1,28 @@
+## Interface: 40300
+## Notes: Wowhead Data dump for GatherMate2 
+## Notes-zhTW: 資料轉存至採集助手
+## Notes-zhCN: 资料转存至采集助手
+## Title: GatherMate2Data
+## Title-zhTW: 採集助手資料庫
+## Title-zhCN: 采集助手数据库
+## Author: kagaro, Xinhuan
+## X-Category: Map,Data Export
+## X-Email: sal.scotto@gmail.com
+## Version: 1.0
+## LoadOnDemand: 1
+## X-Generated-Version: $Revision: 72 $
+## Dependencies: GatherMate2
+## X-Curse-Packaged-Version: v5.1
+## X-Curse-Project-Name: GatherMate2_Data
+## X-Curse-Project-ID: gathermate2_data
+## X-Curse-Repository-ID: wow/gathermate2_data/mainline
+
+## X-Revision: WoWShell
+
+MiningData.lua
+HerbalismData.lua
+GasData.lua
+FishData.lua
+TreasureData.lua
+ArchaeologyData.lua
+GatherMateData.lua

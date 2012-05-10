@@ -1,0 +1,23 @@
+## Interface: 40300
+## Title: |cFF33A2F7[|r|cFFFF7979COMBAT|r|cFF34A2F7]|rCastbar
+## Title-zhCN: |cFF33A2F7[|r|cFFFF7979战斗|r|cFF34A2F7]|r施法条增强
+## Title-zhTW: |cFF33A2F7[|r|cFFFF7979戰斗|r|cFF34A2F7]|r施法条增强
+## Notes: Display hostile's creature cast info
+## Notes-zhCN: 施法条增强
+## Notes-zhCN: 施法条增强
+## Author: 月色狼影
+## SavedVariables: CastbarDB
+## Dependencies: Wowshell
+## X-Revision: WoWShell
+## X-Category: Combat,_Wowshell
+
+## X-TipMemory:Low
+## X-TipSuggest:建议非频繁施法的玩家禁用此插件
+
+## X-PY:shifatiaozengqiang
+
+locale\zhCN.lua
+locale\zhTW.lua
+locale\enUS.lua
+
+castbar.lua

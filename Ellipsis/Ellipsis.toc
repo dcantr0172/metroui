@@ -1,0 +1,28 @@
+## Interface: 40300
+## Title: Ellipsis (|cff67b1e9K|cff4779ceith|cff67b1e9M|cff4779ceod|r)
+## Notes: A full-featured, multi-target Aura (DoTs and HoTs) timer and Cooldown tracker.
+## Author: Kith (Kithulhu)
+## Version: 2.2.0
+## SavedVariables: EllipsisDB
+## OptionalDeps: Ace3, LibSharedMedia-3.0, LibSink-2.0
+## X-Embeds: Ace3, LibSharedMedia-3.0, LibSink-2.0
+## X-Category: Interface Enhancements,Buffs & Debuffs
+## Dependencies: WoWShell
+## X-Revision: Wowshell
+
+## X-TipMemory:Middle
+## X-TipSuggest:建议非多目标Dot玩家禁用此插件 暗牧及痛苦术士建议开启此插件
+## X-PY:fashujishi
+
+Locales\Local_enUS.lua
+Locales\Local_deDE.lua
+Locales\Local_frFR.lua
+Locales\Local_zhCN.lua
+Locales\Local_zhTW.lua
+
+Core.lua
+ClassData.lua
+Config.lua
+GUI.lua
+Cooldowns.lua
+AuraHandler.lua

@@ -1,0 +1,31 @@
+## Interface: 40300
+## Title: BlizzFacade
+
+## Version: 4.0.44
+## Notes: Adds ButtonFacade support to the default interface.
+## Notes-zhCN: 增加 ButtonFacade 支持到默认界面。
+## Notes-zhTW: 增加 ButtonFacade 支持到默認界面。
+## Author: StormFX
+## X-eMail: stormfx@gmail.com
+## X-Website: http://www.wowace.com/projects/blizzfacade
+## X-Category: Interface Enhancements
+## Dependencies: Masque, Wowshell
+## X-WoWI-ID: 13800
+## OptionalDeps: Ace3
+## SavedVariables: BlizzFacadeDB
+## X-Curse-Packaged-Version: 4.0.44
+## X-Curse-Project-Name: BlizzFacade
+## X-Curse-Project-ID: blizzfacade
+## X-Curse-Repository-ID: wow/blizzfacade/mainline
+## X-Category : Plugins
+## X-Revision: WoWShell
+## X-TipMemory : Middle
+## X-TipSuggest: 不使用暴雪原始动作条的玩家可以禁用这个插件
+## X-PY:baoxuedongzuotiaomeihua
+
+# Locales
+Locales.lua
+
+# Core
+Core.lua
+Modules\Modules.xml

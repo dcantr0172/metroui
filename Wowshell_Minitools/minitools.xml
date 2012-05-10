@@ -1,0 +1,18 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+<Include file ="BaudErrorFrame\BaudErrorFrame.xml" />
+<Include file ="yClassColors\load.xml" />
+<Include file ="mbb\MBB.xml" />
+<Script file ="minitools.lua" />
+<Script file ="dragall.lua" />
+<Script file ="KeepingTabs.lua" />
+<Script file ="HatTrick.lua" />
+<Script file ="TradeTabs.lua" />
+<Script file ="buff_timer.lua" />
+<Script file ="closeUp.lua" />
+<Include file ="FriendsMenu.xml" />
+<Include file ="InspectFix.lua" />
+<Include file = "GuildRosterSelectedFix.lua" />
+
+</Ui>

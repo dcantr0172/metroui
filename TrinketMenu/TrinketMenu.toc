@@ -1,0 +1,27 @@
+## Interface: 40300
+## Title: TrinketMenu
+## Title-zhCN: 饰品管理器
+## Title-zhTW: 飾品管理器
+## Author: Gello
+## Notes: AddOn to manage trinkets
+## SavedVariables: TrinketMenuOptions
+## SavedVariablesPerCharacter: TrinketMenuPerOptions, TrinketMenuQueue
+## X-Revision: WoWShell
+## X-Category: Miscellaneous
+
+## X-TipMemory:Low
+## X-TipSuggest:没有饰品的玩家建议禁用此插件
+## X-PY:shipinguanliqi
+
+locale\enUS.lua
+locale\zhCN.lua
+locale\zhTW.lua
+
+TrinketMenu.lua
+TrinketMenu.xml
+TrinketMenuOpt.lua
+TrinketMenuOpt.xml
+TrinketMenuQueue.lua
+TrinketMenuQueue.xml
+
+FixTrinketMiniButton.lua

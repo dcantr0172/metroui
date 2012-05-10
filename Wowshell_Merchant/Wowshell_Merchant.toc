@@ -1,0 +1,15 @@
+﻿## Interface: 40300
+## Dependencies: Wowshell
+## Title: Wowshell Mechant
+## Title-zhCN: 商人助手
+## Title-zhTW: 商人助手
+## X-Revision: WoWShell
+## SavedVariables: WSMERCHANTDB
+## X-Category: Miscellaneous,_Wowshell
+## X-TipMemory:Low
+## X-PY:shangrenzhushou
+
+
+core.lua
+sellinglist.lua
+

@@ -1,0 +1,14 @@
+## Interface: 40300
+## Title: LibInspectLess-1.0 by Warbaby
+## Notes: Protect the NotifyInspect function from being called too frequently.
+## Notes-zhTW: 保護觀察命令, 防止被插件過于頻繁的調用導致無法觀察其他玩家.
+## Author: Warbaby
+## OptionalDeps: InspectLess
+## SavedVariables: LibInspectLessInterval,LibInspectLessDebug,LibInspectLessIntervalRealm
+## X-Curse-Packaged-Version: 1.01.11
+## X-Curse-Project-Name: LibInspectLess-1.0
+## X-Curse-Project-ID: libinspectless-1-0
+## X-Curse-Repository-ID: wow/libinspectless-1-0/mainline
+LibStub\LibStub.lua
+CallbackHandler-1.0\CallbackHandler-1.0.lua
+libs.xml

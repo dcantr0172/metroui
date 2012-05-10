@@ -1,0 +1,10 @@
+## Interface: 40300
+
+## Title: BaudErrorFrame
+## Note: collect erros
+## Author: 
+## Version: 2.1.3
+
+BaudErrorFrame.lua
+BaudErrorFrame.xml
+

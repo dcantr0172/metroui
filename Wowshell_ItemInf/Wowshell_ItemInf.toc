@@ -1,0 +1,32 @@
+## Interface: 40300
+## Title: |cFF34A2F7[|r|cFFFFFFFFITEM|r|cFF34A2F7]|rItemInfo
+## Title-zhCN: |cFF34A2F7[|r|cFFFFFFFF物品|r|cFF34A2F7]|r物品信息
+## Title-zhTW: |cFF34A2F7[|r|cFFFFFFFF物品|r|cFF34A2F7]|r物品信息
+## Notes-zhCN: 记录并显示物品价格, 以及将物品与玩家装备物品作比较.
+## Notes-zhTW: 記錄并顯示物品價格, 以及將物品與玩家裝備物品做比較
+## X-Revision: WoWShell
+## Dependencies: Wowshell
+## X-Category: Item,_Wowshell
+## SavedVariables: ItemInfDB
+## X-TipMemory:Middle
+## X-PY:wupinxinxi
+
+core.lua
+tekKompare.lua
+tekability.lua
+HoverTips.lua
+MyGems.lua
+
+item_details.lua
+
+item_details_module\InBags.lua
+item_details_module\ItemDrops.lua
+item_details_module\ItemID.lua
+item_details_module\ItemType.lua
+item_details_module\Stacksize.lua
+item_details_module\WeightediLevel.lua
+item_details_module\iLevel.lua
+
+jewelTips\locale\locale.xml
+jewelTips\JewelTips.lua
+jewelTips\data.lua

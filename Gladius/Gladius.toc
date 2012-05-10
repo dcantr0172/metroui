@@ -1,0 +1,50 @@
+## Interface: 40300
+## Title: Gladius
+## Notes: Arena enemy unit frames
+## Title-zhCN: 竞技场助手[Gladius]
+## Notes-zhCN: 竞技场敌对目标框体
+## Title-zhTW: 競技場助手[Gladius]
+## Notes-zhTW: 競技場敵對目標框體
+## Version: v2.0.18-beta
+## Author: Rinu, Proditor
+## SavedVariables: Gladius2DB
+## OptionalDeps: Ace3, LibStub, LibSharedMedia-3.0
+## X-Curse-Packaged-Version: v2.0.18-beta
+## X-Curse-Project-Name: Gladius
+## X-Curse-Project-ID: gladius
+## X-Curse-Repository-ID: wow/gladius/wolftankk
+
+## X-Revision: WoWShell
+## Dependencies: WoWShell
+## DefaultState: disabled
+## X-Category: PvP,Unit Frames
+
+## X-TipMemory:Middle
+## X-TipSuggest:不打竞技场的玩家建议禁用此插件
+## X-PY:jingjichangzhushou
+
+embeds.xml
+
+Gladius.lua
+
+localization\enUS.lua
+localization\zhCN.lua
+
+options.lua
+speclist.lua
+
+modules\healthbar.lua
+modules\powerbar.lua
+modules\castbar.lua
+modules\voicealerts.lua
+modules\auras.lua
+modules\classicon.lua
+modules\trinket.lua
+modules\highlight.lua
+modules\clicks.lua
+modules\targetbar.lua
+modules\tags.lua
+modules\announcements.lua
+modules\drtracker.lua
+modules\timer.lua
+modules\layout.lua

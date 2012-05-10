@@ -1,0 +1,11 @@
+<Bindings>
+	<!--Binding name="WSQUICKEQUIP_QUICKSTRIP" header="WOWSHELL_QUICKEQUIP"></Binding-->
+	<Binding name="WSQUICKEQUIP_EQUIP1" header="WOWSHELL_QUICKEQUIP">QuickEquip.SetButtonOnClick(QuickEquip, 1)</Binding>
+	<Binding name="WSQUICKEQUIP_EQUIP2">QuickEquip.SetButtonOnClick(QuickEquip, 2)</Binding>
+	<Binding name="WSQUICKEQUIP_EQUIP3">QuickEquip.SetButtonOnClick(QuickEquip, 3)</Binding>
+	<Binding name="WSQUICKEQUIP_EQUIP4">QuickEquip.SetButtonOnClick(QuickEquip, 4)</Binding>
+	<Binding name="WSQUICKEQUIP_EQUIP5">QuickEquip.SetButtonOnClick(QuickEquip, 5)</Binding>
+	<Binding name="WSQUICKEQUIP_EQUIP6">QuickEquip.SetButtonOnClick(QuickEquip, 6)</Binding>
+	<Binding name="WSQUICKEQUIP_EQUIP7">QuickEquip.SetButtonOnClick(QuickEquip, 7)</Binding>
+	<Binding name="WSQUICKEQUIP_EQUIP8">QuickEquip.SetButtonOnClick(QuickEquip, 8)</Binding>
+</Bindings>

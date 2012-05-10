@@ -1,0 +1,31 @@
+## Interface: 40300
+## Title: EventAlertMod
+## Title-zhTW:EventAlertMod@|cff69ccf0永恆滿月|r
+## Title-zhCN:EventAlertMod@|cff69ccf0永恆滿月|r
+## Notes: Simple warnings for event procs
+## Notes-zhTW:特效觸發醒目提示(修改版), 以大型圖示來提示玩家 Buff/Debuff &目標Debuff, 設定指令為 /ea opt。
+## Notes-zhCN:特效触发醒目提示(修改版), 以大型图示来提示玩家 Buff/Debuff &目标Debuff, 设定指令为 /ea opt。
+## Author: CurtisTheGreat(AIM) (Special thanks: WoW UI Forums, Crast of the Pub)
+## Version: 4.6.02b
+## SavedVariables: EA_Config, EA_Position, EA_Items, EA_AltItems, EA_TarItems, EA_ScdItems, EA_Pos, EA_SpecFlag
+
+## RequiredDeps: Wowshell
+## DefaultState: disabled
+## X-Revision: WoWShell
+## X-Category: Combat,Buffs & Debuffs
+
+## X-TipMemory:Middle
+## X-TipSuggest:不需要监视各种特效的玩家建议禁用此插件
+## X-PY:fashutexiaotishi
+
+
+localization.lua
+localization.tw.lua
+localization.cn.lua
+EventAlertMod.xml
+EventAlert_Options.xml
+EventAlert_ClassAlerts.xml
+EventAlert_OtherAlerts.xml
+EventAlert_TargetAlerts.xml
+EventAlert_SCDAlerts.xml
+EventAlert_IconOptions.xml

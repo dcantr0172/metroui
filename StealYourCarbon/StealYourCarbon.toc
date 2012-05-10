@@ -1,0 +1,25 @@
+## Interface: 40300
+
+## Title: Steal Your Carbon
+## Title-zhCN: 自动补购
+## Title-zhTW: 自動補購
+## Notes: Automatically restock items from vendors and your bank
+## Author: Tekkub Stoutwrithe
+## Version: Alpha
+## X-Website: http://www.tekkub.net/
+## X-Email: tekkub-wow@googlegroups.com
+## X-Category: Bags & Inventory
+
+## SavedVariablesPerCharacter: StealYourCarbonDB
+
+## X-Revision: WoWShell
+## X-PY:zidongbugou
+
+## X-TipMemory:Middle
+
+tekKonfig\tekKonfig.xml
+CallbackHandler-1.0.lua
+LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+StealYourCarbon.lua
+Config.lua

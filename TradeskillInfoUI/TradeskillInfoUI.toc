@@ -1,0 +1,25 @@
+﻿## Interface: 40300
+## Title: TradeSkill Info UI
+## Notes: Complete Tradeskill Info UI
+## Notes-zhCN: 商业技能资料库设置窗口
+## Notes-zhTW: 商業技能資料庫設置窗口
+## Author: wmrojer
+## eMail: evenue.wow@gmail.com
+## X-eMail: evenue.wow@gmail.com
+## X-Curse-Packaged-Version: v2.1.2
+## X-Curse-Project-Name: TradeskillInfo
+## X-Curse-Project-ID: tradeskill-info
+## X-Curse-Repository-ID: wow/tradeskill-info/mainline
+## X-Revision: WoWShell
+## X-Category: Professions
+
+## Dependencies: TradeskillInfo
+
+locale-enUS.lua
+locale-zhCN.lua
+locale-zhTW.lua
+
+TradeskillInfoUI.lua
+TradeskillInfoUI.xml
+
+TradeskillInfoOptions.lua

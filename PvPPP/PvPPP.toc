@@ -1,0 +1,16 @@
+﻿## Interface: 40300
+## Title: PvPPP
+## Title-zhCN:屁威屁屁屁
+## Title-zhTW:屁威屁屁屁
+## Author: susnow
+## Notes: PvP
+## Notes-zhCN:屁威屁
+## Notes-zhTW:屁威屁
+
+## X-Revision: WoWShell
+## X-TipMemory:Low
+## X-TipSuggest:从不参与战争游戏的职业建议禁用此插件
+## X-PY:pvpzhanchangzengqiang
+
+
+PvPPP.lua

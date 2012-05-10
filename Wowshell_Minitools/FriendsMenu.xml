@@ -1,0 +1,317 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Script file="FriendsMenu.lua"/>
+    <Button name="wsFriendMenuButtonTemplate" virtual="true">
+		<Size x="100" y="16"/>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentHighlight" file="Interface\QuestFrame\UI-QuestTitleHighlight" alphaMode="ADD" setAllPoints="true" hidden="true" />
+			</Layer>
+			<Layer level="ARTWORK">
+				<Texture name="$parentCheck" file="Interface\Buttons\UI-CheckBox-Check">
+					<Size x="18" y="18"/>
+					<Anchors>
+						<Anchor point="LEFT">
+							<Offset x="0" y="0"/>
+						</Anchor>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentIcon" hidden="true">
+					<Size>
+					<AbsDimension x="16" y="16"/>
+					</Size>
+					<Anchors>
+					<Anchor point="RIGHT">
+						<Offset x="-10" y="0"/>
+					</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button name="$parentExpandArrow" hidden="true">
+				<Size>
+					<AbsDimension x="16" y="16"/>
+				</Size>
+				<Anchors>
+					<Anchor point="RIGHT">
+						<Offset>
+							<AbsDimension x="-10" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						--ToggleDropDownMenu(self:GetParent():GetParent():GetID() + 1, self:GetParent().value, nil, nil, nil, nil, --self:GetParent().menuList, self);
+					</OnClick>
+					<OnEnter>
+						local level =  self:GetParent():GetParent():GetID() + 1;
+						listFrame = self:GetParent():GetParent();
+						if ( not listFrame or not listFrame:IsShown() or select(2, listFrame:GetPoint()) ~= self ) then
+							wsFriendFrame.ws_ShowMenu(level, self.value, nil, nil, nil, nil, nil, self);
+						end
+						UIDropDownMenu_StopCounting(self:GetParent():GetParent());
+					</OnEnter>
+					<OnLeave>
+						UIDropDownMenu_StartCounting(self:GetParent():GetParent());
+					</OnLeave>
+				</Scripts>
+				<NormalTexture file="Interface\ChatFrame\ChatFrameExpandArrow"/>
+			</Button>
+			<Button name="$parentInvisibleButton" hidden="true">
+				<Anchors>
+					<Anchor point="TOPLEFT"/>
+					<Anchor point="BOTTOMRIGHT"/>
+				</Anchors>
+				<Scripts>
+					<OnEnter>
+						UIDropDownMenu_StopCounting(self:GetParent():GetParent());
+						CloseDropDownMenus(self:GetParent():GetParent():GetID() + 1);
+					</OnEnter>
+					<OnLeave>
+						UIDropDownMenu_StartCounting(self:GetParent():GetParent());
+					</OnLeave>
+				</Scripts>
+			</Button>
+		</Frames>
+		<Scripts>
+			<!--OnClick新方法只适用于3.0.8以后的版本-->
+			<OnClick function="wsFriendMenu_OnClick"/>
+			<OnEnter>
+				if ( self.hasArrow ) then
+					local level =  self:GetParent():GetID() + 1;
+					local inCombat = InCombatLockdown();
+					local listFrame
+					if inCombat then
+						listFrame = _G["wsFriendMenuSecure"..level];
+					else
+						listFrame = _G["wsFriendMenu"..level];
+					end
+					if ( not listFrame or not listFrame:IsShown() or select(2, listFrame:GetPoint()) ~= self ) then
+						wsFriendFrame.ws_ShowMenu(level, self.value, nil, nil, nil, nil, nil, self);
+					end
+				else
+					local level = self:GetParent():GetID() + 1;
+					if not level then level = 1 end
+					for i = level, 2 do
+						if i == 2 then
+							wsFriendMenu2:Hide()
+							wsFriendMenuSecure2:Hide()
+						elseif i == 1 then
+							wsFriendMenu:Hide()
+							wsFriendMenuSecure:Hide()
+						end
+					end
+				end
+				getglobal(self:GetName().."Highlight"):Show();
+				UIDropDownMenu_StopCounting(self:GetParent());
+				if (self.tooltipTitle) then
+					GameTooltip_AddNewbieTip(self, self:GetText() or self.tooltipTitle, 1.0, 1.0, 1.0, self.tooltipText, 1);
+				end
+			</OnEnter>
+			<OnLeave>
+				getglobal(self:GetName().."Highlight"):Hide();
+				UIDropDownMenu_StartCounting(self:GetParent());
+				GameTooltip:Hide();
+			</OnLeave>
+		</Scripts>
+		<ButtonText name="$parentNormalText">
+			<Anchors>
+			<Anchor point="LEFT">
+				<Offset x="-5" y="0"/>
+			</Anchor>
+			</Anchors>
+		</ButtonText>
+		<NormalFont style="GameFontHighlightSmallLeft"/>
+		<HighlightFont style="GameFontHighlightSmallLeft"/>
+		<DisabledFont style="GameFontDisableSmallLeft"/>
+    </Button>
+
+    <Button name="wsFriendMenuTemplate" frameStrata="FULLSCREEN_DIALOG" toplevel="true" enableMouse="true" virtual="true">
+		<Frames>
+			<Frame name="$parentBackdrop" setAllPoints="true" hidden="true">
+			<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+				<BackgroundInsets>
+				<AbsInset left="11" right="12" top="12" bottom="11"/>
+				</BackgroundInsets>
+				<TileSize>
+				<AbsValue val="32"/>
+				</TileSize>
+				<EdgeSize>
+				<AbsValue val="32"/>
+				</EdgeSize>
+			</Backdrop>
+			</Frame>
+			<Frame name="$parentMenuBackdrop" setAllPoints="true">
+			<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+				<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5"/>
+				</BackgroundInsets>
+				<EdgeSize val="16"/>
+				<TileSize val="16"/>
+			</Backdrop>
+			<Scripts>
+				<OnLoad>
+				self:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b);
+				self:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r, TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, TOOLTIP_DEFAULT_BACKGROUND_COLOR.b);
+				</OnLoad>
+			</Scripts>
+			</Frame>
+			<Button name="$parentButton1" inherits="wsFriendMenuButtonTemplate" id="1"/>
+			<Button name="$parentButton2" inherits="wsFriendMenuButtonTemplate" id="2"/>
+			<Button name="$parentButton3" inherits="wsFriendMenuButtonTemplate" id="3"/>
+			<Button name="$parentButton4" inherits="wsFriendMenuButtonTemplate" id="4"/>
+			<Button name="$parentButton5" inherits="wsFriendMenuButtonTemplate" id="5"/>
+			<Button name="$parentButton6" inherits="wsFriendMenuButtonTemplate" id="6"/>
+			<Button name="$parentButton7" inherits="wsFriendMenuButtonTemplate" id="7"/>
+			<Button name="$parentButton8" inherits="wsFriendMenuButtonTemplate" id="8"/>
+			<Button name="$parentButton9" inherits="wsFriendMenuButtonTemplate" id="9"/>
+			<Button name="$parentButton10" inherits="wsFriendMenuButtonTemplate" id="10"/>
+			<Button name="$parentButton11" inherits="wsFriendMenuButtonTemplate" id="11"/>
+			<Button name="$parentButton12" inherits="wsFriendMenuButtonTemplate" id="12"/>
+			<Button name="$parentButton13" inherits="wsFriendMenuButtonTemplate" id="13"/>
+			<Button name="$parentButton14" inherits="wsFriendMenuButtonTemplate" id="14"/>
+			<Button name="$parentButton15" inherits="wsFriendMenuButtonTemplate" id="15"/>
+			<Button name="$parentButton16" inherits="wsFriendMenuButtonTemplate" id="16"/>
+			<Button name="$parentButton17" inherits="wsFriendMenuButtonTemplate" id="17"/>
+			<Button name="$parentButton18" inherits="wsFriendMenuButtonTemplate" id="18"/>
+			<Button name="$parentButton19" inherits="wsFriendMenuButtonTemplate" id="19"/>
+			<Button name="$parentButton20" inherits="wsFriendMenuButtonTemplate" id="20"/>
+		</Frames>
+		<Scripts>
+			<OnClick>
+				self:Hide();
+			</OnClick>
+			<OnEnter>
+				UIDropDownMenu_StopCounting(self);
+			</OnEnter>
+			<OnLeave>
+				UIDropDownMenu_StartCounting(self);
+			</OnLeave>
+			<OnUpdate>
+				UIDropDownMenu_OnUpdate(self, elapsed);
+			</OnUpdate>
+			<OnShow>
+				for i=1, wsFRIENDMENU_MANBUTTONS do
+					getglobal(self:GetName().."Button"..i):SetWidth(self.maxWidth)
+				end
+				self:SetWidth(self.maxWidth+15);
+				self.showTime = nil
+			</OnShow>
+			<OnHide>
+				self:ClearAllPoints();
+			</OnHide>
+		</Scripts>
+    </Button>
+	
+	<Button name="wsFriendMenu" toplevel="true" inherits="wsFriendMenuTemplate" frameStrata="FULLSCREEN_DIALOG" hidden="true" id="1">
+		<Size>
+			<AbsDimension x="180" y="10"/>
+		</Size>
+	</Button>
+	<Button name="wsFriendMenu2" toplevel="true" inherits="wsFriendMenuTemplate" frameStrata="FULLSCREEN_DIALOG" hidden="true" id="2">
+		<Size>
+			<AbsDimension x="180" y="10"/>
+		</Size>
+	</Button>
+
+    <Button name="wsFriendMenuSecureButtonTemplate" inherits="wsFriendMenuButtonTemplate, SecureActionButtonTemplate" virtual="true">
+		<Scripts>
+			<OnLoad>
+				self:HookScript("OnClick", wsFriendMenu_OnClick);
+				self:RegisterForClicks("AnyUp")
+			</OnLoad>
+		</Scripts>
+    </Button>
+
+    <Button name="wsFriendMenuSecureTemplate" toplevel="true" frameStrata="FULLSCREEN_DIALOG" virtual="true" enableMouse="true">
+		<Size>
+			<AbsDimension x="180" y="10"/>
+		</Size>
+		<Frames>
+			<Frame name="$parentBackdrop" setAllPoints="true" hidden="true">
+			<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+				<BackgroundInsets>
+				<AbsInset left="11" right="12" top="12" bottom="11"/>
+				</BackgroundInsets>
+				<TileSize>
+				<AbsValue val="32"/>
+				</TileSize>
+				<EdgeSize>
+				<AbsValue val="32"/>
+				</EdgeSize>
+			</Backdrop>
+			</Frame>
+			<Frame name="$parentMenuBackdrop" setAllPoints="true">
+			<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+				<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5"/>
+				</BackgroundInsets>
+				<EdgeSize val="16"/>
+				<TileSize val="16"/>
+			</Backdrop>
+			<Scripts>
+				<OnLoad>
+				self:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b);
+				self:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r, TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, TOOLTIP_DEFAULT_BACKGROUND_COLOR.b);
+				</OnLoad>
+			</Scripts>
+			</Frame>
+			<Button name="$parentButton1" inherits="wsFriendMenuSecureButtonTemplate" id="1"/>
+			<Button name="$parentButton2" inherits="wsFriendMenuSecureButtonTemplate" id="2"/>
+			<Button name="$parentButton3" inherits="wsFriendMenuSecureButtonTemplate" id="3"/>
+			<Button name="$parentButton4" inherits="wsFriendMenuSecureButtonTemplate" id="4"/>
+			<Button name="$parentButton5" inherits="wsFriendMenuSecureButtonTemplate" id="5"/>
+			<Button name="$parentButton6" inherits="wsFriendMenuSecureButtonTemplate" id="6"/>
+			<Button name="$parentButton7" inherits="wsFriendMenuSecureButtonTemplate" id="7"/>
+			<Button name="$parentButton8" inherits="wsFriendMenuSecureButtonTemplate" id="8"/>
+			<Button name="$parentButton9" inherits="wsFriendMenuSecureButtonTemplate" id="9"/>
+			<Button name="$parentButton10" inherits="wsFriendMenuSecureButtonTemplate" id="10"/>
+			<Button name="$parentButton11" inherits="wsFriendMenuSecureButtonTemplate" id="11"/>
+			<Button name="$parentButton12" inherits="wsFriendMenuSecureButtonTemplate" id="12"/>
+			<Button name="$parentButton13" inherits="wsFriendMenuSecureButtonTemplate" id="13"/>
+			<Button name="$parentButton14" inherits="wsFriendMenuSecureButtonTemplate" id="14"/>
+			<Button name="$parentButton15" inherits="wsFriendMenuSecureButtonTemplate" id="15"/>
+			<Button name="$parentButton16" inherits="wsFriendMenuSecureButtonTemplate" id="16"/>
+			<Button name="$parentButton17" inherits="wsFriendMenuSecureButtonTemplate" id="17"/>
+			<Button name="$parentButton18" inherits="wsFriendMenuSecureButtonTemplate" id="18"/>
+			<Button name="$parentButton19" inherits="wsFriendMenuSecureButtonTemplate" id="19"/>
+			<Button name="$parentButton20" inherits="wsFriendMenuSecureButtonTemplate" id="20"/>
+		</Frames>
+		<Scripts>
+			<OnClick>
+				self:Hide();
+			</OnClick>
+			<OnEnter>
+				UIDropDownMenu_StopCounting(self)
+			</OnEnter>
+			<OnLeave>
+				UIDropDownMenu_StartCounting(self)
+			</OnLeave>
+			<OnUpdate>
+				UIDropDownMenu_OnUpdate(self, elapsed);
+			</OnUpdate>
+			<OnShow>
+				for i=1, wsFRIENDMENU_MANBUTTONS do
+					getglobal(self:GetName().."Button"..i):SetWidth(self.maxWidth)
+				end
+				self:SetWidth(self.maxWidth+15);
+				self.showTimer = nil
+				self.isCounting = nil
+			</OnShow>
+			<OnHide>
+				self:ClearAllPoints();
+			</OnHide>
+		</Scripts>
+    </Button>
+
+	<Button name="wsFriendMenuSecure" toplevel="true" inherits="wsFriendMenuSecureTemplate" frameStrata="FULLSCREEN_DIALOG" hidden="true" id="1">
+		<Size>
+			<AbsDimension x="180" y="10"/>
+		</Size>
+	</Button>
+	<Button name="wsFriendMenuSecure2" toplevel="true" inherits="wsFriendMenuSecureTemplate" frameStrata="FULLSCREEN_DIALOG" frameLevel="55" hidden="true" id="2">
+		<Size>
+			<AbsDimension x="180" y="10"/>
+		</Size>
+	</Button>
+</Ui>

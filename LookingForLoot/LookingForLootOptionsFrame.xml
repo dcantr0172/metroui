@@ -1,0 +1,112 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/"> 
+    <Script file="LookingForLootOptionsFrame.lua"/>
+    <Frame name="LookingForLootOptionsFrameTemplate" parent="UIParent" virtual="true">
+        <Anchors>
+            <Anchor point="TOPLEFT" relativePoint="TOPLEFT"/>
+        </Anchors>
+        <Layers>
+            <Layer level="OVERLAY">
+                <FontString name="$parentEnabledLabel" inherits="GameFontNormal" justifyH="LEFT" parentKey="enabledLabel" text="启用:">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="20" y="-29"/>
+                    </Anchors>
+                </FontString>
+                <FontString name="$parentEnabledInPartyLabel" inherits="GameFontNormal" justifyH="LEFT" parentKey="enabledPartyLabel" text="小队">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="120" y="-29"/>
+                    </Anchors>
+                </FontString>
+                <FontString name="$parentEnabledInRaid10Label" inherits="GameFontNormal" justifyH="LEFT" parentKey="enabledRaid10Label" text="10人团队">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="220" y="-29"/>
+                    </Anchors>
+                </FontString>
+                <FontString name="$parentEnabledInRaid25Label" inherits="GameFontNormal" justifyH="LEFT" parentKey="enabledRaid25Label" text="25人团队">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="340" y="-29"/>
+                    </Anchors>
+                </FontString>
+                <FontString name="$parentPositioningModeLabel" inherits="GameFontNormal" justifyH="LEFT" parentKey="positioningModeLabel" text="战利品显示模式:">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="20" y="-70"/>
+                    </Anchors>
+                </FontString>
+                <FontString name="$parentCareFactorLabel" inherits="GameFontNormal" justifyH="LEFT" parentKey="careFactorLabel" text = "ROLL点信息:">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="20" y="-140"/>
+                    </Anchors>
+                </FontString>
+                <FontString name="$parentChatFilterLabel" inherits="GameFontNormal" justifyH="LEFT" parentKey="chatFilterLabel" text = "屏蔽聊天框中的ROLL点信息">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="60" y="-219"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Frames>
+            <CheckButton name="$parentEnabledPartyCheckButton" parentKey="enabledPartyCheckButton" inherits="UICheckButtonTemplate">
+                <Size>
+                    <AbsDimension x="32" y="32" />
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="85" y="-20"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentEnabledRaid10CheckButton" parentKey="enabledRaid10CheckButton" inherits="UICheckButtonTemplate">
+                <Size>
+                    <AbsDimension x="32" y="32" />
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="185" y="-20"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentEnabledRaid25CheckButton" parentKey="enabledRaid25CheckButton" inherits="UICheckButtonTemplate">
+                <Size>
+                    <AbsDimension x="32" y="32" />
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="305" y="-20"/>
+                </Anchors>
+            </CheckButton>
+            <CheckButton name="$parentChatFilterButton" parentKey="chatFilterCheckButton" inherits="UICheckButtonTemplate">
+                <Size>
+                    <AbsDimension x="32" y="32" />
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="20" y="-210"/>
+                </Anchors>
+            </CheckButton>
+            <Button name="$parentResetButton" parentKey="resetButton" inherits="UIPanelButtonTemplate2" text="恢复默认设置">
+                <Size>
+                    <AbsDimension x="170" y="26" />
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="15" y="-260"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick>
+                        LookingForLootOptionsFrame_ResetButton_OnClick(self)
+                    </OnClick>
+                </Scripts>
+            </Button>
+                <Button name="$parentTestButton" parentKey="testButton" inherits="UIPanelButtonTemplate2" text="演示模式">
+                <Size>
+                    <AbsDimension x="100" y="26" />
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="15" y="-310"/>
+                </Anchors>
+                <Scripts>
+                    <OnClick>
+                        LookingForLootOptionsFrame_TestButton_OnClick(self)
+                    </OnClick>
+                </Scripts>
+            </Button>
+        </Frames>
+        <Scripts>
+            <OnLoad>
+                LookingForLootOptionsFrame_OnLoad(self)
+            </OnLoad>
+        </Scripts>
+    </Frame>
+</Ui>

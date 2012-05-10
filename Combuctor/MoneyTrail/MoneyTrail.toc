@@ -1,0 +1,17 @@
+## Interface: 40300
+## X-Curse-Packaged-Version: r62
+## X-Curse-Project-Name: MoneyTrail
+## X-Curse-Project-ID: money-trail
+## X-Curse-Repository-ID: wow/money-trail/mainline
+
+## Title: Money Trail
+## Notes: Shows a money overview for your current realm in the tooltip on the money in your bags
+
+## Author: Ammo
+
+## SavedVariables: MoneyTrailDB
+
+## OptionalDeps: Combuctor, Baggins, OneBag, cargBags, ArkInventory, BaudBag, FBagOfHolding
+
+MoneyTrail.lua
+

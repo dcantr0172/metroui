@@ -1,0 +1,11 @@
+## Interface: 40300
+## Title: |cFF32A2F7[|r|cFF0065EFGENERAL|r|cFF34A2F7]|rWoWShell_Minitools
+## Title-zhCN: |cFF32A2F7[|r|cFF0065EF综合|r|cFF34A2F7]|rWoWShell魔兽精灵实用工具集
+## Title-zhTW: |cFF32A2F7[|r|cFF0065EF綜合|r|cFF34A2F7]|rWoWShell魔獸精靈實用工具集
+## Notes: WoWShell mini tools 
+## Notes-zhCN:魔兽精灵实用工具集 
+## Notes-zhTW:魔獸精靈實用工具集
+## SavedVariablesPerCharacter: MBB_Exclude, MBB_Options
+
+minitools.xml
+

@@ -1,0 +1,17 @@
+## Interface: 40300
+## Title: Dominos Config
+## Title-zhCN: 多米诺动作条 设置
+## Title-zhTW: 多米諾動作條 設置
+## Notes: GUI based configuration for Dominos
+## Author: Tuller
+## Dependencies: Dominos
+## LoadOnDemand: 1
+## DefaultState: disabled
+## X-Revision: WoWShell
+## X-Category: Action Bars
+
+localization.xml
+menu.lua
+panel.lua
+general.lua
+profiles.lua

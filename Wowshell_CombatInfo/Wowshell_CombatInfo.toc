@@ -1,0 +1,24 @@
+## Interface: 40300
+## Title: |cFF33A2F7[|r|cFFFF7979COMBAT|r|cFF34A2F7]|rCombatInfo
+## Title-zhCN: |cFF33A2F7[|r|cFFFF7979战斗|r|cFF34A2F7]|r战斗信息
+## Title-zhTW: |cFF33A2F7[|r|cFFFF7979戰斗|r|cFF34A2F7]|r戰斗信息
+## Notes: Display Combat info
+## Notes-zhCN: 显示战斗信息
+## Notes-zhCN: 顯示戰斗信息
+## Author: 月色狼影
+## SavedVariables: CombatInfoDB
+## Dependencies: Wowshell
+## X-Revision: WoWShell
+## X-Category: Combat,_Wowshell
+## X-PY:zhandouxinxi
+
+## X-TipMemory:Middle
+
+locale\zhCN.lua
+locale\zhTW.lua
+locale\enUS.lua
+
+CombatInfo.lua
+config.lua
+spellTable.lua
+

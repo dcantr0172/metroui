@@ -1,0 +1,18 @@
+## Interface: 40300
+## Dependencies: WoWShell
+## Title: |cFF32A2F7[|r|cFF0065EFGENERAL|r|cFF34A2F7]|rDBSearch
+## Title-zhCN: |cFF32A2F7[|r|cFF0065EF综合|r|cFF34A2F7]|r资料查询
+## Title-zhTW: |cFF32A2F7[|r|cFF0065EF綜合|r|cFF34A2F7]|r資料查詢
+## Notes: Add search button for target & quest object, via wowshell web database for mob & quest info when you check.
+## Notes-zhCN: 在目标和任务旁增加了查询按钮, 点击就可以通过WoWShell的数据库查询怪物和任务信息.
+## Notes-zhTW: 在目標和任務旁增加了查詢按鈕, 點擊就可以通過wowshell的數據庫查詢怪物和任務信息.
+## X-Revision: WoWShell
+## X-Category: Miscellaneous,Quest,_Wowshell
+## SavedVariables: QueryDB
+
+## X-TipMemory:Low
+## X-TipSuggest:如果你使用精灵头像的话 会有更方便的快捷键来代替这个插件的功能
+## X-PY:ziliaochaxun
+
+
+WSSearch.lua

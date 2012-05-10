@@ -1,0 +1,17 @@
+## Interface: 40300
+## Title: Bagnon Forever
+## Title-zhCN: |cFF34A2F7[|r|cFFFFFFFF物品|r|cFF34A2F7]|r玩家背包信息
+## Title-zhTW: |cFF34A2F7[|r|cFFFFFFFF物品|r|cFF34A2F7]|r玩家背包咨詢
+## Notes: Stores inventory information about your characters
+## Notes-zhTW: 儲存角色背包和銀行的物品資訊
+## Notes-zhCN: 保存角色背包与银行内物品的信息
+## Author: Tuller
+## Version: 1.1.2
+## SavedVariables: BagnonForeverDB
+## X-Revision: WoWShell
+## X-Category: Bags & Inventory
+## LoadOnDemand: 0
+## X-TipMemory: Middle
+## X-PY:beibaoxinxi
+db.lua
+ui.xml

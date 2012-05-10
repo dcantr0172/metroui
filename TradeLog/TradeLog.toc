@@ -1,0 +1,23 @@
+## Interface: 40300
+## Title: TradeLog
+## Title-zhCN: 交易记录
+## Title-zhTW: 交易記錄
+## Notes: trade history log, recent trade list by Warbaby@163.com
+## Notes-zhCN: 交易记录 by Warbaby (三月十二@聖光之願<冰封十字軍>)
+## SavedVariablesPerCharacter: TradeLog_TradesHistory, TRADE_LOG_BUTTON_POS, TradeLog_Announce_Checked, TradeLog_AnnounceChannel
+## X-Curse-Packaged-Version: 1.0
+## X-Curse-Project-Name: TradeLog
+## X-Curse-Project-ID: tradelog
+## X-Curse-Repository-ID: wow/tradelog/mainline
+## X-Revision: WoWShell
+## X-Category: Plugins
+## X-TipMemory:Middle
+## X-TipSuggest:不经常与人交易的玩家建议禁用此插件
+## X-PY:jiaoyijilu
+
+localization-enUS.lua
+localization-zhCN.lua
+localization-zhTW.lua
+TradeLog.lua
+RecentTradeFrame.xml
+TradeLogFrame.xml

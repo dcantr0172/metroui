@@ -1,0 +1,18 @@
+## Interface: 40300
+## Title: Bagnon Tooltips
+## Title-zhCN: |cFF34A2F7[|r|cFFFFFFFF物品|r|cFF34A2F7]|r背包提示
+## Title-zhTW: |cFF34A2F7[|r|cFFFFFFFF物品|r|cFF34A2F7]|r背包提示
+## Author: Tuller
+## Notes: Tooltips for telling who has what
+## Notes-zhCN: 物品提示上显示同帐号下其他角色银行/背包黑该物品情况
+## Notes-zhTW: 物品提示上顯示同帳號下其他角色銀行/背包黑該物品情況
+## RequiredDeps: Bagnon_Forever
+## X-Revision: WoWShell
+## X-Category: Bags & Inventory
+## X-TipMemory :Middle
+## X-PY:beibaotishi
+
+localization\localization.lua
+localization\localization.cn.lua
+localization\localization.tw.lua
+tooltips.lua

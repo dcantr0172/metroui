@@ -1,0 +1,20 @@
+## Interface: 40300
+## Title: WoWShell Gather
+## Title-zhCN: 数据采集器
+## Title-zhTW: 數據采集器
+## Notes: Gather your ingame data: Npcs, Postions, Quests, Items & Objects etc..
+## Notes-zhCN: 采集游戏中的Npc, 任务, 物品以及商人出售数据
+## Notes-zhTW: 采集游戲中的Npc, 任務, 物品以及商人出售數據
+
+## X-TipMemory:High
+## X-PY:shujucaijiqi
+
+#### SavedVariables: WSGatherDB
+
+## X-Revision: WoWShell
+## Dependencies: WoWShell
+#### DefaultState: disabled
+## X-Category: Development Tools,_Wowshell
+
+#core.lua
+

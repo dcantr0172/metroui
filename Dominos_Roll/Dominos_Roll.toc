@@ -1,0 +1,12 @@
+## Interface: 40300
+## Title: Dominos Roll
+## Title-zhCN: 多米诺动作条 掷点
+## Title-zhTW: 多米諾動作太 擲點
+## Notes: Makes the set of frames for rolling on items when in a group movable
+## Author: Tuller
+## Dependencies: Dominos
+## DefaultState: disabled
+## X-Revision: WoWShell
+## X-Category: Action Bars
+
+rollBar.lua

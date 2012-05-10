@@ -1,0 +1,247 @@
+<Ui>
+	<Frame name="wsStatFrameTemplate" virtual="true">
+        <Size>
+            <AbsDimension x="104" y="13"/>
+        </Size>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <FontString name="$parentLabel" inherits="GameFontNormalSmall" parentKey="Label">
+                    <Anchors>
+                        <Anchor point="LEFT"/>
+                    </Anchors>
+                </FontString>
+				<FontString name="$parentStatText" inherits="GameFontHighlightSmall" justifyH="RIGHT" parentKey="Value">
+					<Anchors>
+						<Anchor point="RIGHT"/>
+					</Anchors>
+				</FontString>
+            </Layer>
+        </Layers>
+		<Scripts>
+			<OnEnter>
+				--PaperDollStatTooltip(self, "player");
+                ExaminerSideBar:ShowCategoryFrameTooltip(self)
+			</OnEnter>
+			<OnLeave>
+				GameTooltip:Hide();
+			</OnLeave>
+		</Scripts>
+    </Frame>
+	<Frame name="wsStatGroupTemplate" virtual="true">
+		<Size x="169" y="0"/>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentBgTop" inherits="Char-Stat-Top" parentKey="BgTop">
+					<Anchors>
+						<Anchor point="TOPLEFT"/>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentBgBottom" inherits="Char-Stat-Bottom" parentKey="BgBottom">
+					<Anchors>
+						<Anchor point="BOTTOMLEFT"/>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentBgMiddle" file="Interface\AddOns\Wowshell_Rez\Char-Stat-Middle" parentKey="BgMiddle" vertTile="true">
+					<Size x="169" y="8"/>
+					<TexCoords left="0.00390625" right="0.66406250" top="0.00000000" bottom="1.00000000"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parentBgTop" relativePoint="BOTTOMLEFT" x="1"/>
+						<Anchor point="BOTTOMLEFT" relativeTo="$parentBgBottom" relativePoint="TOPLEFT"/>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentBgMinimized" inherits="Char-Stat-Minimized" parentKey="BgMinimized" hidden="true">
+					<Size x="169" y="18"/>
+					<Anchors>
+						<Anchor point="TOPLEFT"/>
+					</Anchors>
+				</Texture>
+				<FontString name="$parentNameText" inherits="GameFontHighlight" justifyH="LEFT" parentKey="NameText">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="15" y="-3"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+			<Layer level="ARTWORK">
+				<Texture name="$parentCollapsedIcon" parentKey="CollapsedIcon" inherits="Char-Stat-Plus" hidden="true">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="5" y="-5"/>
+					</Anchors>
+				</Texture>
+				<Texture name="$parentExpandedIcon" parentKey="ExpandedIcon" inherits="Char-Stat-Minus">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="5" y="-7"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button name="$parentToolbar">
+				<Anchors>
+					<Anchor point="TOPLEFT"/>
+					<Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" x="0" y="-20"/>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						self:RegisterForDrag("LeftButton");
+					</OnLoad>
+					<OnEnter>
+						--if (MOVING_STAT_CATEGORY == nil) then
+						--	self.SortDownArrow:Show();
+						--	self.SortUpArrow:Show();
+						--end
+					</OnEnter>
+					<OnLeave>
+						--if ( not self:IsMouseOver() and MOVING_STAT_CATEGORY ~= self:GetParent()) then
+						--	self.SortDownArrow:Hide();
+						--	self.SortUpArrow:Hide();
+						--end
+					</OnLeave>
+					<OnClick>
+                        --[=[
+						local categoryFrame = self:GetParent() 
+						if categoryFrame.collapsed then
+							if (categoryFrame.collapsed) then
+								categoryFrame.collapsed = false;
+								categoryFrame.CollapsedIcon:Hide();
+								categoryFrame.ExpandedIcon:Show();
+								--PaperDollFrame_UpdateStatCategory(categoryFrame);
+								--PaperDollFrame_UpdateStatScrollChildHeight();
+								categoryFrame.BgMinimized:Hide();
+								categoryFrame.BgTop:Show();
+								categoryFrame.BgMiddle:Show();
+								categoryFrame.BgBottom:Show();
+							end
+						else
+                            categoryFrame.collapsed = true;
+                            local index = 1;
+                            while (_G[categoryFrame:GetName().."Stat"..index]) do 
+                                _G[categoryFrame:GetName().."Stat"..index]:Hide();
+                                index = index + 1;
+                            end
+                            categoryFrame.CollapsedIcon:Show();
+                            categoryFrame.ExpandedIcon:Hide();
+                            categoryFrame:SetHeight(categoryFrame.NameText:GetHeight() + 6);
+                            --PaperDollFrame_UpdateStatScrollChildHeight();
+                            categoryFrame.BgMinimized:Show();
+                            categoryFrame.BgTop:Hide();
+                            categoryFrame.BgMiddle:Hide();
+                            categoryFrame.BgBottom:Hide();
+                            end
+                            ]=]
+                            ExaminerSideBar:CategoryFrameOnLick(self:GetParent())
+					</OnClick>
+					<OnDragStart>
+						--[[PaperDollStatCategory_OnDragStart(self:GetParent());
+						self.SortDownArrow:Show();
+						self.SortUpArrow:Show();]]
+					</OnDragStart>
+					<OnDragStop>
+						--[[PaperDollStatCategory_OnDragStop(self:GetParent());
+						if (self:IsMouseOver()) then
+							self.SortDownArrow:Show();
+							self.SortUpArrow:Show();
+						else
+							self.SortDownArrow:Hide();
+							self.SortUpArrow:Hide();
+						end]]
+					</OnDragStop>
+				</Scripts>
+				<Frames>
+					<Button name="$parentSortUpArrow" parentKey="SortUpArrow" hidden="true">
+						<Size x="16" y="8"/>
+						<Anchors>
+							<Anchor point="TOPRIGHT" x="-1" y="-1"/>
+						</Anchors>
+						<Layers>
+							<Layer level="BACKGROUND">
+								<Texture name="$parentArrow" file="StatSortArrows" parentKey="Arrow" alpha="0.4" setAllPoints="true">	
+									<TexCoords left="0" right="1" top="0" bottom="0.5"/>
+								</Texture>
+							</Layer>
+						</Layers>
+						<Scripts>
+							<OnEnter>
+								--[[self:Show();
+								self.Arrow:SetAlpha(0.6);
+								self:GetParent().SortDownArrow:Show();]]
+							</OnEnter>
+							<OnLeave>
+								--[[self.Arrow:SetAlpha(0.4);
+								if ( not self:GetParent():IsMouseOver() ) then
+									self:Hide();
+									self:GetParent().SortDownArrow:Hide();
+								end]]
+							</OnLeave>
+							<OnClick>
+								--Paperdoll_MoveCategoryUp(self:GetParent():GetParent());
+							</OnClick>
+						</Scripts>
+					</Button>
+					<Button name="$parentSortDownArrow" parentKey="SortDownArrow" hidden="true">
+						<Size x="16" y="8"/>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="$parentSortUpArrow" relativePoint="BOTTOMLEFT"/>
+						</Anchors>
+						<Layers>
+							<Layer level="BACKGROUND">
+								<Texture name="$parentArrow" file="StatSortArrows" parentKey="Arrow" alpha="0.4" setAllPoints="true">
+									<TexCoords left="0" right="1" top="0.5" bottom="1"/>
+								</Texture>
+							</Layer>
+						</Layers>
+						<Scripts>
+							<OnEnter>
+								self:Show();
+								self.Arrow:SetAlpha(0.6);
+								self:GetParent().SortUpArrow:Show();
+							</OnEnter>
+							<OnLeave>
+								self.Arrow:SetAlpha(0.4);
+								if ( not self:GetParent():IsMouseOver() ) then
+									self:Hide();
+									self:GetParent().SortUpArrow:Hide();
+								end
+							</OnLeave>
+							<OnClick>
+								--Paperdoll_MoveCategoryDown(self:GetParent():GetParent());
+							</OnClick>
+						</Scripts>
+					</Button>
+				</Frames>
+			</Button>
+			<!--Frame name="$parentStat1" inherits="wsStatFrameTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" x="16" y="-19"/>
+					<Anchor point="RIGHT" x="-4"/>
+				</Anchors>
+			</Frame-->
+		</Frames>
+	</Frame>
+
+	<!--  Libs -->
+	<Script file="Libs\AzDialog.lua"/>
+	<Script file="Libs\AzDropDown.lua"/>
+	<Script file="Libs\LibTableRecycler.lua"/>
+
+	<!--  Core -->
+	<Script file="Scanner.lua"/>
+	<Script file="BaseData.lua" />
+	<Script file="core.lua"/>
+
+	<!--  Modules -->
+	<Script file="Modules\itemslots.lua"/>
+	<Script file="Modules\config.lua"/>
+	<!--Script file="Modules\cache.lua"/-->
+	<Script file="Modules\stats.lua"/>
+	<Script file="Modules\glyphs.lua"/>
+	<Script file="Modules\pvp.lua"/>
+	<Script file="Modules\feats.lua"/>
+	<Script file="Modules\talents.lua"/>
+    <Script file="Modules\sideFrame.lua" />
+
+	<!--  Localisation -->
+	<Script file="Locales\enUS.lua"/>
+	<Script file="Locales\zhCN.lua"/>
+	<Script file="Locales\zhTW.lua"/>
+
+</Ui>

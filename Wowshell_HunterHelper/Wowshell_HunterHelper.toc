@@ -1,0 +1,24 @@
+## Interface: 40300
+## Dependencies: Wowshell
+## Title: |cFF35A2F7[|r|cFF37B622CLASS|r|cFF34A2F7]|rHunter
+## Title-zhCN: |cFF35A2F7[|r|cFF37B622职业|r|cFF34A2F7]|r猎人助手
+## Title-zhTW: |cFF35A2F7[|r|cFF37B622職業|r|cFF34A2F7]|r獵人助手
+## Notes-zhCN: 针对猎人职业的宠物快速喂食及冰冻陷阱计时器功能.
+## Notes-zhTW: 獵人助手, 增加寵物快速喂食功能
+## SavedVariables: HunterHelperDB
+## X-Revision: WoWShell
+## X-Category: Class,_Wowshell
+## X-LoadOn-Class: Hunter
+#### LoadOnDemand: 1
+
+## X-TipMemory:Low
+## X-TipSuggest:建议非猎人玩家禁用此插件
+## X-PY:lierenzhushou
+
+zhCN.lua
+enUS.lua
+zhTW.lua
+
+core.lua
+feed.lua
+#aspectframe.lua

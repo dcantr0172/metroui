@@ -1,0 +1,26 @@
+## Interface: 40300
+## X-Curse-Packaged-Version: r11-release
+## X-Curse-Project-Name: CastDonut
+## X-Curse-Project-ID: castdonut
+## X-Curse-Repository-ID: wow/castdonut/mainline
+
+## Title: Cast Donut
+## Title-zhCN: 施法甜甜圈
+## Title-zhTW: 施法甜甜圈
+## Notes: Adds an inobtrusive circular castbar around the mousecursor, handy for Clique users
+## Author: Ammo
+## X-Credits: Iriel for the Ring code, Haste for the CastBar code, Mikkel Westh for the extra textures
+## X-Category: Combat
+## LoadOnDemand: 1
+## LoadWith: Wowshell
+## DefaultState: disabled
+## RequiredDeps: Wowshell
+## X-Revision: WoWShell
+## X-TipMemory: Low
+## X-TipSuggest:不需要频繁读条的玩家建议禁用这个插件
+## X-PY:shifatiantianquan
+libs\LibStub\LibStub.lua
+
+donut.lua
+cast.lua
+

@@ -1,0 +1,78 @@
+## Interface: 40300
+## Version: 4.2.0.1442
+## X-ReleaseDate: "$Date: 2011-07-07 12:11:39 +0000 (Thu, 07 Jul 2011) $"
+## X-Curse-Packaged-Version: 4.2.0.1442
+## X-Curse-Project-Name: Grid
+## X-Curse-Project-ID: grid
+## X-Curse-Repository-ID: wow/grid/mainline
+
+## Title: Grid
+## Title-zhCN: 团队框架 Grid
+## Title-zhTW: 團隊框架 Grid
+## Notes: A compact grid of party/raid unit frames.
+## Notes-zhCN: 小巧的轻量级模块化队伍/团队框架。
+## Notes-zhTW: 精簡的團隊框架功能
+
+## Author: Pastamancer, Maia
+## Credits: Jerry, Phanx, Greltok
+## X-Category: UnitFrame,Raid
+## X-Website: http://www.wowace.com/addons/grid/
+## X-AceForum: 2525
+## X-WoWI-ID: 5747
+## X-PY:tuanduikuangjia
+
+## DefaultState: disabled
+## X-Revision: WoWShell
+## Dependencies: WoWShell
+## OptionalDeps: Ace3, LibDBIcon-1.0, LibDualSpec-1.0, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, AceGUI-3.0-Spell-EditBox, UTF8, Clique, SharedMedia
+## SavedVariables: GridDB
+
+## X-TipMemory: Middle
+## X-TipSuggest:习惯暴雪原始团队框架风格或其他团队框架的玩家建议禁用此插件
+
+
+Libs\LibDualSpec-1.0\LibDualSpec-1.0.lua
+Libs\AceGUI-3.0-Spell-EditBox\AceGUI-3.0-Spell-EditBox.xml
+
+Locales\GridLocale-zhCN.lua
+Locales\GridLocale-zhTW.lua
+
+GridCore.lua
+GridRoster.lua
+GridLayout.lua
+GridLayoutLayouts.lua
+GridFrame.lua
+GridStatus.lua
+GridLDB.lua
+
+Statuses\GridStatusAggro.lua
+Statuses\GridStatusAuras.lua
+Statuses\GridStatusHeals.lua
+Statuses\GridStatusHealth.lua
+Statuses\GridStatusMana.lua
+Statuses\GridStatusName.lua
+Statuses\GridStatusRange.lua
+Statuses\GridStatusReadyCheck.lua
+Statuses\GridStatusTarget.lua
+Statuses\GridStatusVehicle.lua
+Statuses\GridStatusVoiceComm.lua
+
+GridCooldownText\GridCooldownText-enUS.lua
+GridCooldownText\GridCooldownText-zhCN.lua
+GridCooldownText\GridCooldownText-zhTW.lua
+GridCooldownText\GridCooldownText.lua
+
+GridIndicatorSideIcons\GridIndicatorSideIcons-localization-enUS.lua
+GridIndicatorSideIcons\GridIndicatorSideIcons-localization-zhCN.lua
+GridIndicatorSideIcons\GridIndicatorSideIcons-localization-zhTW.lua
+GridIndicatorSideIcons\GridIndicatorSideIcons.lua
+
+GridManaBars\GMBLocale-enUS.lua
+GridManaBars\GMBLocale-zhCN.lua
+GridManaBars\GMBLocale-zhTW.lua
+GridManaBars\GridManaBar.lua
+GridManaBars\GridStatusMana.lua
+
+GridStatusHots\GridStatusHotsLocale_zhCN.lua
+GridStatusHots\GridStatusHotsLocale_zhTW.lua
+GridStatusHots\GridStatusHots.lua

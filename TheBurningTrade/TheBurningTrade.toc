@@ -1,0 +1,24 @@
+## Interface: 40300
+## LoadOnDemand: 0
+## Title: TheBurningTrade
+## Title-zhCN: 交易助手
+## Title-zhTW: 交易助手
+## Author: Warbaby@163.com
+## Version: 2.0
+## Notes: Mage and Warlock trade assistant, interface enchanced
+## Notes-zhCN: 造水助手,交易界面增强 by Warbaby (三月十二@聖光之願<冰封十字軍>)
+## OptionalDeps: Skinner
+## X-Curse-Packaged-Version: 0.10.20
+## X-Curse-Project-Name: TheBurningTrade
+## X-Curse-Project-ID: the-burning-trade
+## X-Curse-Repository-ID: wow/the-burning-trade/mainline
+## X-Category: Plugins
+## X-Revision: WoWShell
+## X-PY:jiaoyizhushou
+
+## X-TipMemory:Low
+
+localization-enUS.lua
+localization-zhCN.lua
+localization-zhTW.lua
+TheBurningTrade.lua

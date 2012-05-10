@@ -1,0 +1,53 @@
+## Interface: 40300
+## Title: Archy - Archaeology Assistant
+## Title-zhCN: Archy - 考古学助手
+## Title-zhTW: Archy - 考古學助手
+## Version: 1.8.22
+## Notes: Archaeology assistant
+## Notes-zhCN: 考古学助手
+## Notes-zhTW: 考古學助手
+## Author: Torhal, Myrroddin, daihenka, Dridzt
+## X-Credits: Cidrei on wowinterface for fan fixes
+## X-Category: Archaeology,Map
+## SavedVariables: ArchyDB2
+## OptionalDeps: Wowshell, LibDBIcon-1.0, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, LibSink-2.0, TomTom, LibAboutPanel, LibQTip-1.0, LibBabble-DigSites-3.0
+## X-Curse-Packaged-Version: 1.8.22
+## X-Curse-Project-Name: Archy - Archaeology Assistant
+## X-Curse-Project-ID: archy
+## X-Curse-Repository-ID: wow/archy/mainline
+
+## DefaultState: disabled
+## X-Revision: WoWShell
+## X-TipMemory: High
+## X-TipSuggest: 未学习考古专业或者对考古学没有太大兴趣的玩家建议禁用
+## X-PY:kaoguzhushou
+
+#@no-lib-strip@
+Libs\LibSink-2.0\lib.xml
+Libs\LibSharedMedia-3.0\lib.xml
+Libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
+Libs\LibAboutPanel\lib.xml
+Libs\LibQTip-1.0\LibQTip-1.0.lua
+Libs\LibBabble-DigSites-3.0\lib.xml
+Libs\LibBabble-Artifacts-3.0\lib.xml
+Libs\LibDialog-1.0\lib.xml
+Libs\LibToast-1.0\lib.xml
+#@end-no-lib-strip@
+
+Libs\Astrolabe-1.0\Load.xml
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+#@no-lib-strip@
+Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
+#@end-no-lib-strip@
+
+Locale\enUS.lua
+Locale\zhCN.lua
+Locale\zhTW.lua
+
+Digsites.lua
+Artifacts.lua
+Archy.xml
+Archy.lua
+Config.lua
+Bindings.xml

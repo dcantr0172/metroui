@@ -1,0 +1,15 @@
+## Interface: 40300
+## Dependencies: Wowshell, HandyNotes
+## Title: Wowshell HandyNotes
+## X-Revision: WoWShell
+## SavedVariables: WOWSHELL_HANDYNOTES_DB
+## X-Category: Map,_Wowshell
+
+## X-TipMemory:High
+## X-PY:quyunpcxinxi
+
+
+data.lua
+core.lua
+worldmap_dropdown.lua
+

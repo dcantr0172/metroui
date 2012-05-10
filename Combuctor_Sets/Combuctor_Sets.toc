@@ -1,0 +1,13 @@
+## Interface: 40300
+## Title: Combuctor: Basic Sets
+## Author: Tuller
+## Title-zhCN: 整合背包: 基础设定
+## Title-zhTW: 整合背包: 基礎設定
+## Notes: Basic sets for Combuctor
+## Notes-zhCN: 为整合背包&银行基础设置
+## Notes-zhTW: 為整合背包&銀行基礎設定
+## Author: Tuller
+## Dependencies: Combuctor
+## X-Revision: WoWShell
+## X-Category: Bags & Inventory
+sets.lua

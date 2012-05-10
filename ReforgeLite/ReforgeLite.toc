@@ -1,0 +1,27 @@
+## Interface: 40300
+## Author: d07.RiV (Iroared)
+## Title: ReforgeLite
+## Title-zhCN: 重铸助手
+## Notes: Calculates optimal reforging for given weights/caps.
+## Version: 1.10
+## SavedVariables: ReforgeLiteDB
+## Dependencies: 
+## X-Curse-Packaged-Version: v1.10
+## X-Curse-Project-Name: ReforgeLite
+## X-Curse-Project-ID: reforgelite
+## X-Curse-Repository-ID: wow/reforgelite/mainline
+## X-Category: Item
+
+## X-Revision: WoWShell
+## Deps: Wowshell
+
+## X-TipMemory:High
+## X-TipSuggest:在不需要重铸的情况下建议禁用此插件
+## X-PY:chongzhuzhushou
+
+libs\LibReforgingInfo-1.0\LibReforgingInfo-1.0.xml
+Localization.lua
+GUI.lua
+ReforgeLite.lua
+ReforgeEngine.lua
+Presets.lua

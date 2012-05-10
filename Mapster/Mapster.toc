@@ -1,0 +1,35 @@
+## Interface: 40300
+## Notes: Simple Map Mod
+## Title-zhCN: 地图增强
+## Notes-zhCN: 为大地图增加移动等功能
+## Title-zhCN: 地圖增強
+## Notes-zhCN: 為大地圖增加移動等功能
+## Notes-frFR: Simples modifications de la carte.
+## Title: Mapster
+## Author: Nevcairiel
+## SavedVariables: MapsterDB
+## X-Category: Map
+## Version: 1.4.3
+## X-License: All rights reserved.
+## X-Curse-Packaged-Version: 1.4.3
+## X-Curse-Project-Name: Mapster
+## X-Curse-Project-ID: mapster
+## X-Curse-Repository-ID: wow/mapster/mainline
+
+## OptionalDeps: Wowshell, Ace3, LibBabble-Zone-3.0, LibWindow-1.1
+## X-Revision: WoWShell
+
+## X-TipMemory: Middle
+## X-PY:dituzengqiang
+
+Locale\locale.xml
+
+Mapster.lua
+Config.lua
+
+Coords.lua
+GroupIcons.lua
+BattleMap.lua
+FogClear.lua
+InstanceMaps.lua
+Scaling.lua

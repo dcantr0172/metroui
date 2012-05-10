@@ -1,0 +1,19 @@
+## Interface: 40000
+## Title: JewelTips
+## Notes: Show extra information about Jewels and Enchants in tooltips.
+## Notes-zhCN: 在物品链接上显示珠宝及附魔的额外信息。
+## Notes-zhTW: 在工具提示上顯示珠寶及附魔的額外資訊。
+## Author: Siz
+## Version: 0.7.2
+## OptionalDeps: Ace3, Wowshell
+## X-Embeds: Ace3
+## X-Category: Interface Enhancements
+## X-Curse-Packaged-Version: r76
+## X-Curse-Project-Name: JewelTips
+## X-Curse-Project-ID: jeweltips
+## X-Curse-Repository-ID: wow/jeweltips/mainline
+
+
+locale\locale.xml
+JewelTips.lua
+data.lua

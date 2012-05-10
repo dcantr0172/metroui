@@ -1,0 +1,16 @@
+## Interface: 40300
+## Title: Combuctor Config
+## Author: Tuller
+## Title-zhCN: 整合背包设置
+## Title-zhTW: 整合背包設定
+## Notes: An options menu for Combuctor
+## Notes-zhCN: 整合背包设置菜单
+## Notes-zhTW: 整合背包設定菜單
+## Author: Tuller
+## Dependencies: Combuctor
+## LoadOnDemand: 1
+## X-Revision: WoWShell
+## X-Category: Bags & Inventory
+
+panel.lua
+general.lua

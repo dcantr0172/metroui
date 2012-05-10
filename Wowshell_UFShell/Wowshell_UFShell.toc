@@ -1,0 +1,35 @@
+## Interface: 40300
+## Dependencies: Wowshell
+## Title: WowshellUintFrames - Shell
+## Title-zhCN: 精灵头像 - 现代风格
+## Title-zhTW: 精靈頭像 - 現代風格
+## Notes-zhCN: 现代风格. 包括队伍,目标,玩家,宠物以及焦点.并且增加了目标的目标的目标, 队伍的目标以及焦点目标的目标
+## Notes-zhTW: 美化增強wow自身的頭像系統包括玩家,目標,隊伍,寵物以及焦點.并且增加了目標的目標的目標, 隊伍的目標以及焦點目標的目標
+## Version: 4.3
+## X-Category: UnitFrame
+## X-Revision: WoWShell
+## LoadOnDemand: 1
+## RequiredDeps: Wowshell_UnitFrames
+## X-PY:xiandaifengge
+
+core.lua
+
+layouts\template.xml
+#layouts\3d.lua
+layouts\units\styleFunc.lua
+layouts\units\preView.lua
+layouts\units\player.lua
+layouts\units\pet.lua
+layouts\units\target.lua
+layouts\units\tot.lua
+layouts\units\totot.lua
+layouts\units\focus.lua
+layouts\units\focustarget.lua
+layouts\units\focustargettarget.lua
+layouts\units\party.lua
+layouts\units\partypet.lua
+layouts\units\partytarget.lua
+#layouts\units\arena.lua
+#layouts\units\arenaTarget.lua
+layouts\units\boss.lua
+layouts\units\bosstarget.lua

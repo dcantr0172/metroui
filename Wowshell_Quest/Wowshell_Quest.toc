@@ -1,0 +1,38 @@
+## Interface: 40300
+## Dependencies: Wowshell, HandyNotes
+## Title: Wowshell Quest
+## Title-zhCN: 任务助手
+## Title-zhTW: 任務助手
+## DefaultState: disabled
+## X-Revision: WoWShell
+## SavedVariables: WSQuestDB
+## X-Category: Quest,Map,_Wowshell
+
+## X-TipMemory:High
+## X-TipSuggest:博学者建议禁用此插件 不怎么做任务的玩家建议禁用此插件
+
+## X-PY:renwuzhushou
+
+Libs\LibQuixote-2.0\lib.xml
+
+data\Name-enUS.lua
+data\Name-zhCN.lua
+data\Name-zhTW.lua
+data\QuestData.lua
+data\ZoneData.lua
+data\NPCData.lua
+data\Quest_EditAdd.lua
+
+locale\locale-zhTW.lua
+locale\locale-zhCN.lua
+locale\locale-enUS.lua
+
+core.lua
+data.lua
+maphelper.lua
+hn_current_quest.lua
+quest_panel.lua
+
+SmoothQuest.lua
+yQuestLevel.lua
+QuestPrice.lua

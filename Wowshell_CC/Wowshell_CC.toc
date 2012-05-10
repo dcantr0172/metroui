@@ -1,0 +1,21 @@
+## Interface: 40300
+## Dependencies: Wowshell
+## Title: |cFF33A2F7[|r|cFFFF7979COMBAT|r|cFF34A2F7]|rCooldownCount
+## Title-zhCN: |cFF33A2F7[|r|cFFFF7979战斗|r|cFF34A2F7]|r冷却计时
+## Title-zhTW: |cFF33A2F7[|r|cFFFF7979戰斗|r|cFF34A2F7]|r冷卻計時
+## Notes-zhCN: 数字化显示技能冷却时间
+## Notes-zhTW: 數字化顯示技能冷卻時間
+## SavedVariables: wsCCDB
+## X-Revision: WoWShell
+## X-Category: Combat,_Wowshell
+## X-TipMemory:Middle
+## X-PY:lengquejishi
+
+locale.lua
+
+core.lua
+
+cc.lua
+redrange.lua
+
+

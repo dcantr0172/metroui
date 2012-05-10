@@ -1,0 +1,23 @@
+﻿## Interface: 40300
+## Author: susnow@NGA
+## Title: |cFF32A2F7[|r|cFF0065EFGENERAL|r|cFF34A2F7]|rWoWShell
+## Title-zhCN: |cFF32A2F7[|r|cFF0065EF综合|r|cFF34A2F7]|rWoWShell魔兽精灵
+## Title-zhTW: |cFF32A2F7[|r|cFF0065EF綜合|r|cFF34A2F7]|rWoWShell魔獸精靈
+## Notes: WoWShell base library.
+## Notes-zhCN: 魔兽精灵控制核心
+## Notes-zhTW: 魔獸精靈控制核心
+
+
+## X-Version: 4.3.4.2760
+## X-UpdateDate: 2012-05-10
+
+wsLocale.lua
+updateLog.lua
+locales.lua
+addOnsList.lua
+specialToggle.lua
+widget.lua
+config.lua
+core.lua
+Wowshell_Logo.lua
+Wowshell_SlideLock.lua

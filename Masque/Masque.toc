@@ -1,0 +1,57 @@
+﻿## Interface: 40300
+## Title: Masque
+## Version: 4.2.375
+## Author: StormFX, JJSheets
+## Notes: A dynamic button skinning add-on.
+## Notes-frFR: Un add-on de skinnage dynamique des boutons.
+## Notes-koKR: 霃欖爜鞚?氩勴娂 鞀ろ偍 鞛呿瀳旮?鞎犽摐鞓?鞛呺媹雼?
+## Notes-zhCN: 动作条美化
+## Notes-zhTW: 動作條美化
+## X-Website: http://www.wowace.com/projects/masque/
+## X-Category: Interface Enhancements
+## X-WoWI-ID: 12097
+## OptionalDeps: Ace3, ButtonFacade, Wowshell
+## SavedVariables: MasqueDB
+## X-Curse-Packaged-Version: 4.2.375
+## X-Curse-Project-Name: Masque
+## X-Curse-Project-ID: masque
+## X-Curse-Repository-ID: wow/masque/mainline
+## X-Category: Plugins,Artwork,Action Bars
+## Deps: Wowshell
+## X-Revision: WoWShell
+## X-TipMemory:Middle
+## X-TipSuggest:建议使用暴雪原始风格动作条的玩家禁用此插件
+## X-PY:dongzuotiaomeihua
+
+
+# Locales
+Core\Locales.lua
+
+# Add-On
+Masque.lua
+
+# Skins
+Skins\Skins.lua
+Skins\Blizzard.lua
+Skins\Dream.lua
+Skins\Zoomed.lua
+Skins\DsmFm.lua
+Skins\DaedUI.lua
+Skins\Darion.lua
+Skins\Dek2.lua
+Skins\Entropy.lua
+Skins\Gears.lua
+Skins\HelloKitty.lua
+Skins\LiteStep.lua
+Skins\Onyx.lua
+Skins\Renaitre.lua
+Skins\Serenity.lua
+Skins\Trinity.lua
+Skins\Apathy.lua
+Skins\Caith.lua
+Skins\Kenzo.lua
+
+# Core
+Core\Button.lua
+Core\Groups.lua
+Core\Options.lua

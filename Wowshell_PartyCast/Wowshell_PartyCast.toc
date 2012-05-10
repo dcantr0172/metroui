@@ -1,0 +1,22 @@
+## InterFace: 40300
+## Title: PartyCast
+## Title-zhCN: 小队施法
+## Title-zhTW: 小隊施法
+## Notes: Add some buttons on party member frame side.
+## Notes-zhCN: 在小队框架旁边增加快速施法技能
+## Notes-zhTW: 在小隊框架旁邊增加快速施法技能
+## Dependencies: WoWShell, Wowshell_UnitFrames
+## SavedVariables: PartyCastDB
+## Version: 3.0
+## X-Revision: WoWShell
+## X-Category: Combat,_Wowshell
+## X-TipMemory:Middle
+
+## X-PY:xiaoduishifa
+
+locale\zhCN.lua
+locale\zhTW.lua
+locale\enUS.lua
+
+PartyCast.lua
+PartyCastFrame.xml

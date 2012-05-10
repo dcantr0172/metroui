@@ -1,0 +1,23 @@
+## Interface: 40300
+## Title: Wowshell Buzz
+## Title-zhCN: 精灵聊天增强
+## Title-zhTW: 精靈聊天增強
+## Notes: Blizzard Chat exchange, chat bar, filter bad words.
+## Notes-zhCN: 聊天增强, 聊天快捷键, 过滤关键词
+## Notes-zhTW: 聊天增強, 聊天快捷鍵, 過濾垃圾資訊
+## Author: 月色狼影
+## SavedVariables: BuzzDB
+## Dependencies: Wowshell
+## X-Revision: WoWShell
+## X-Category: Chat,_Wowshell
+
+## X-TipMemory:Middle
+## X-PY:liaotianzengqiang
+
+raidTactial.lua
+stats.lua
+cn.lua
+tw.lua
+core.lua
+icon.lua
+

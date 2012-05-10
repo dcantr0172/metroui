@@ -1,0 +1,34 @@
+## Interface: 40300
+## Title: Accountant Classic
+## Notes: A basic tool to track your monetary incomings and outgoings within WoW.
+## Author: Arith Hsu
+## Version: 2.5.11
+## X-eMail: arithmandarjp@yahoo.co.jp
+## X-Credits: Sabaki, Shadow, Rophy
+## X-License: GPLv2
+## X-Website: http://wow.curseforge.com/addons/accountant-classic/
+## X-Category: Information,Auction & Economy
+## X-Localizations: enUS, frFR, deDE, zhCN, zhTW, koKR
+## X-Donate: https://www.paypal.com/cgi-bin/webscr?return=http%3A%2F%2Fwow.curseforge.com%2Faddons%2Faccountant-classic%2F&cn=Add+special+instructions+to+the+addon+author%28s%29&business=arithmandar%40gmail.com&bn=PP-DonationsBF%3Abtn_donateCC_LG.gif%3ANonHosted&cancel_return=http%3A%2F%2Fwow.curseforge.com%2Faddons%2Faccountant-classic%2F&lc=US&item_name=Accountant+Classic+%28from+CurseForge.com%29&cmd=_donations&rm=1&no_shipping=1&currency_code=USD
+## Title-zhTW: 個人會計
+## Notes-zhTW: 追蹤每個角色的所有收入與支出狀況，並可顯示當日小計、當週小計、以及自有記錄起的總計。並可顯示所有角色的總金額。
+## Title-zhCN: 个人会计
+## Notes-zhCN: 追踪每个角色的所有收入与支出状况，并可显示当日小计、当周小计、以及自有记录起的总计。并可显示所有角色的总金额。
+## SavedVariables: Accountant_SaveData, Accountant_Options
+## X-Curse-Packaged-Version: v2.5.11
+## X-Curse-Project-Name: Accountant Classic
+## X-Curse-Project-ID: accountant-classic
+## X-Curse-Repository-ID: wow/accountant-classic/mainline
+
+## DefaultState: disabled
+## X-Revision: WoWShell
+## Deps: Wowshell
+## X-TipMemory: LOW
+## X-TipSuggest: 建议对经济经营有兴趣的玩家使用
+## X-PY:gerenkuaiji
+
+Libs\Libs.xml
+Locale\Locales.xml
+Accountant.xml
+AccountantButton.xml
+AccountantOptions.xml

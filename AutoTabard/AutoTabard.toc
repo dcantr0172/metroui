@@ -1,0 +1,19 @@
+## Interface: 40300
+## Title: AutoTabard
+## Title-zhCN: AutoTabard 自动战袍
+## Title-zhTW: AutoTabard 自動外袍
+## Version: 1.972
+## Notes: Automatically equips the choosen tabard in heroic instances
+## Notes-zhCN: 当进入对应的副本时,自动装备设置的战袍
+## Notes-zhTW: 當進入英雄副本時，自動裝備已選擇的外袍。
+## Author: evil.oz
+## SavedVariablesPerCharacter: AutoTabard_DesiredFaction, AutoTabard_SavedTabard, AutoTabard_HighlightFaction,  AutoTabard_RestoreHighlightFaction, AutoTabard_SavedHighlightFaction
+## Dependencies: Wowshell
+## X-Revision: WoWShell
+## X-Category: Guild
+
+## X-TipMemory: LOW
+## X-TipSuggest: 建议在地下城中开启该插件 其他场合建议禁用该插件
+## X-PY:zhanpaozhushou
+
+AutoTabard.xml

@@ -1,0 +1,23 @@
+﻿## Interface: 40300
+## Title: GridStatusRaidDebuff
+## Title-zhTW: 團隊框架 團隊減益
+## Title-zhCN: 团队框架 团队减益
+## Notes: Adds a status to Grid for debuffs applied by Raid Bosses.
+## Notes-zhCN: [Grid] 在 Grid 添加团队减益状态提示。
+## Notes-zhTW: [Grid] 在 Grid 添加團隊減益狀態提示。
+## Author: Azelkeeber(KR-Tirion),Toadkiller
+## Version: v3.32
+## Grid Author: Pastamancer & Maia
+## Dependencies: Grid
+## OptionalDeps: LibBabble-Zone-3.0, LibBabble-Boss-3.0
+## X-Category: UnitFrame,Raid,Buffs & Debuffs
+## X-GridStatusModule: GridStatusRaidDebuff
+## X-Curse-Packaged-Version: r301
+## X-Curse-Project-Name: GridStatusRaidDebuff
+## X-Curse-Project-ID: grid-status-raid-debuff
+## X-Curse-Repository-ID: wow/grid-status-raid-debuff/mainline
+## X-Revision: WoWShell
+
+embeds.xml
+Core.lua
+

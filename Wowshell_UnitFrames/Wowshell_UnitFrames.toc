@@ -1,0 +1,35 @@
+## Interface: 40300
+## Dependencies: Wowshell
+## Title: Wowshell_UnitFrames
+## Title-zhCN: 精灵头像 - 核心
+## Title-zhTW: 精靈頭像 - 核心
+## Notes-zhCN: 新版精灵头像, 拥有暴风风格,现代风格. 包括队伍,目标,玩家,宠物以及焦点.并且增加了目标的目标的目标, 队伍的目标以及焦点目标的目标
+## Notes-zhTW: 美化增強wow自身的頭像系統包括玩家,目標,隊伍,寵物以及焦點.并且增加了目標的目標的目標, 隊伍的目標以及焦點目標的目標
+## Version: 4.2
+## OptionalDeps: tekDebug
+## X-Category: Unit Frames,Libraries,_Wowshell
+## X-Revision: WoWShell
+## SavedVariablesPerCharacter: WSUFDB 
+## X-TipMemory:Middle
+## X-TipSuggest:建议有足够耐心的玩家来定义他们的自定义头像
+## X-PY:jinglingtouxiang
+
+
+locales\enUS.lua
+locales\zhCN.lua
+locales\zhTW.lua
+
+Wowshell_UnitFrames.lua
+
+oUF\oUF.xml
+plugins\module.lua
+plugins\layout.lua
+plugins\LibBase64-1.0.lua
+
+plugins\tags.lua
+plugins\classIcon.lua
+plugins\combatfeedback.lua
+plugins\vehicleTexture.lua
+plugins\faction.lua
+plugins\exp.lua
+plugins\movers.lua

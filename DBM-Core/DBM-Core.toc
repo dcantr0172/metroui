@@ -1,0 +1,33 @@
+﻿## Interface: 40300
+## X-Min-Interface: 40200
+## Title:|cffffd200Deadly Boss Mods|r |cff69ccf0Core|r
+## Title-zhCN: |cffffd200Deadly Boss Mods|r |cff69ccf0核心|r
+## Title-zhTW:|cffffd200Deadly Boss Mods|r |cff69ccf0核心|r
+## Notes: Deadly Boss Mods
+## SavedVariablesPerCharacter: DBM_SavedOptions, DBT_SavedOptions
+## LoadOnDemand: 0
+## DefaultState: enabled
+## Author: Tandanu and Nitram
+## X-Website: http://www.deadlybossmods.com
+## X-Revision: WoWShell
+## X-Curse-Packaged-Version: 4.10.2
+## X-Curse-Project-Name: Deadly Boss Mods
+## X-Curse-Project-ID: deadly-boss-mods
+## X-Curse-Repository-ID: wow/deadly-boss-mods/mainline
+## X-Category: Combat,Boss Encounters,Archiements
+
+## X-TipMemory:High
+## X-TipSuggest:不经常打副本的玩家建议禁用此插件
+## X-PY:shoulingyujing
+
+localization.en.lua
+localization.cn.lua
+localization.tw.lua
+DBT-Template.xml
+DBT.lua
+DBM-Core.lua
+DBM-Arrow.lua
+DBM-RangeCheck.lua
+DBM-BossHealth.lua
+DBM-BossHealth.xml
+DBM-InfoFrame.lua
