@@ -244,6 +244,7 @@ function SL:ToggleSlideLock(flag)
 		BP2:Hide()
 		TP:Hide()
 		SetUIVisibility(true)
+		MoveViewRightStop()
 	elseif flag == "SHOW" then
 		SL:Show()
 		SL.SlideButton:SetPoint("LEFT",SL.SlideBar,13.5, -0.3)
@@ -251,6 +252,7 @@ function SL:ToggleSlideLock(flag)
 		BP2:Show()
 		TP:Show()
 		PlaySoundFile(tex.."lock2.ogg","Master")
+		MoveViewRightStart(0.01)
 	end
 end
 

@@ -86,7 +86,7 @@ locales.zhCN = {
 	Thursday = "星期四",
 	Friday = "星期五",
 	Saturday = "星期六",
-	["Slide Button To Unlock"] = "移动滑块来解锁屏幕",
+	["Slide Button To Unlock"] = "移动滑块按钮来解锁屏幕",
 	DD = "日",
 	
 	AUDIO = "声音",
@@ -229,7 +229,7 @@ locales.zhTW = {
 	Thursday = "星期四",
 	Friday = "星期五",
 	Saturday = "星期六",
-	["Slide Button To Unlock"] = "移動滑塊來解鎖屏幕",
+	["Slide Button To Unlock"] = "移動滑塊按鈕來解鎖屏幕",
 	DD = "日",
 
 	AUDIO = "聲音",
