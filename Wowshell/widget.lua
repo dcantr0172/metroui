@@ -925,7 +925,8 @@ function GUI:SlideBar(name,point,parent)
 					if tempX > mdmX then
 						local cusX = select(4,self:GetPoint())
 						if cusX > 186 then	
-							self:Disable()	
+							self:SetScript("OnUpdate",nil)
+							--self:Disable()	
 							SetCVar(name,1)
 						else
 							local cvar = cusX/btnp:GetWidth()
@@ -936,7 +937,8 @@ function GUI:SlideBar(name,point,parent)
 						local cusX = select(4,self:GetPoint())
 						if cusX < 0 then
 							SetCVar(name,0)
-							self:Disable()
+							self:SetScript("OnUpdate",nil)
+							--self:Disable()
 						else
 							local cvar = cusX/btnp:GetWidth()
 							SetCVar(name,cvar)

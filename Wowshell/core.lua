@@ -213,7 +213,7 @@ _G["Wowshell_SearchBox"]:SetScript("OnTextChanged",function(self)
 				if UL[str] then
 					scf.content:SetText(UL[str])
 				else
-					scf.content:SetText(L["TipSearchLogNotFound"],str)
+					scf.content:SetText(format(L["TipSearchLogNotFound"],str))
 				end
 			end
 		end)	
