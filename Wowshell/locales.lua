@@ -112,14 +112,14 @@ locales.zhCN = {
 	Sound_AmbienceVolume = "环境音",
 	
 	--radiobutton
-	OFF = "关闭",
-	ON = "开启",
-	LOW = "低",
-	MEDIUM = "中",
-	HIGH = "高",
-	EXCELLENT = "优良",
-	NORMAL = "普通",
-	GREAT = "极佳",
+	off = "关闭",
+	on = "开启",
+	low = "低",
+	medium = "中",
+	high = "高",
+	excellent = "优良",
+	normal = "普通",
+	great = "极佳",
 
 	filter_2L = "双线性",
 	filter_3L = "三线性",

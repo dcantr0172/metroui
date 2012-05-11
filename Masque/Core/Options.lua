@@ -140,7 +140,7 @@ do
 	local function GetOption(info)
 		local Option = info[#info]
 		if Option == "SkinID" then
-			return SkinList[info.arg.db.SkinID] or SkinList["Blizzard"]
+			return SkinList[info.arg.db.SkinID] or SkinList["Apathy"]
 		else
 			return info.arg.db[Option]
 		end
@@ -197,7 +197,7 @@ do
 	-- Gets the state of a layer.
 	local function GetState(info)
 		local db, Layer = info.arg.db, info[#info]
-		local Skin = Skins[db.SkinID] or Skins["Blizzard"]
+		local Skin = Skins[db.SkinID] or Skins["Apathy"]
 		if Layer == "Color" then
 			Layer = info[#info-1]
 		end

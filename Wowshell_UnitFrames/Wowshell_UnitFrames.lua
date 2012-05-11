@@ -38,7 +38,7 @@ function ns:OnInitialize()
 		profile = {
 			locked = true,
 			advanced = false,
-			currentStyle = "Blizzard",
+			currentStyle = "Shell",
 			tooltipCombat = false,
 			tags = {},
 			classColors = {
