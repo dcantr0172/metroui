@@ -20,7 +20,7 @@ function GUI:MainFrame()
 	mf.nextUpdate = 0
 	mf:SetSize(800,600)
 	mf:SetPoint("CENTER")
-	mf:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1,insets={top = 0, bottom = 0,left = 0,right = 0}})
+	mf:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1.1,insets={top = 0, bottom = 0,left = 0,right = 0}})
 	mf:SetBackdropColor(.1,.1,.1,.5)
 	mf:SetBackdropBorderColor(0,0,0,1)
 	mf.logo = CreateFrame("Button","Wowshell_Logo",mf)
@@ -53,7 +53,7 @@ function GUI:MainFrame()
 
 	local scf = CreateFrame("Frame","Wowshell_MainFrame_ScrollFrame",f)	
 	scf.nextUpdate = 0
-	scf:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1,insets={top = 0, bottom = 0,left = 0,right = 0}})
+	scf:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1.1,insets={top = 0, bottom = 0,left = 0,right = 0}})
 	scf:SetBackdropBorderColor(1,1,1,0)
 	scf:SetBackdropColor(0,0,0,0)
 	scf:SetSize(f:GetWidth()-10,f:GetHeight()-10)
@@ -68,12 +68,12 @@ function GUI:MainFrame()
 		end
 		local curScr = f:GetVerticalScroll()
 		if delay == 1 then
-			f:SetVerticalScroll((curScr - 30))	
+			f:SetVerticalScroll((curScr - 100))	
 			if curScr < -60 then
 				f:SetVerticalScroll(0)
 			end
 		elseif delay == -1 then
-			f:SetVerticalScroll((curScr + 30))	
+			f:SetVerticalScroll((curScr + 100))	
 		end
 	end)
 
@@ -90,7 +90,7 @@ function GUI:MainFrame()
 				local tmpX, tmpY = GetCursorPosition()
 				if tmpY > curY then -- up
 					f:SetVerticalScroll((curScr + (tmpY-curY)))	
-				elseif tmpY < curY then --bottom
+				elseif tmpY < curY then --down
 					local tmpScr = f:GetVerticalScroll()
 					f:SetVerticalScroll((curScr - (curY-tmpY)))	
 					if tmpScr < -60 then
@@ -183,7 +183,7 @@ function GUI:SearchBox()
 	do local f,s,flag = editbox:GetFont()
 		editbox:SetFont(cf,s,flag)
 	end
-	editbox:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1,insets={top = 0, bottom = 0,left = 0,right = 0}})
+	editbox:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1.1,insets={top = 0, bottom = 0,left = 0,right = 0}})
 	editbox:SetBackdropColor(.2,.2,.2,.5)
 	editbox:SetBackdropBorderColor(.1,.1,.1,1)
 	editbox:SetTextInsets(5,0,0,0)
@@ -283,7 +283,7 @@ end
 
 function GUI:CategoryChildFrame(parent)
 	local f = CreateFrame("Frame","Wowshell_Category"..parent.."_ChildFrame",_G["Wowshell_Category_"..parent.."Button"])
-	f:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1,insets={top = 0, bottom = 0,left = 0,right = 0}})
+	f:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1.1,insets={top = 0, bottom = 0,left = 0,right = 0}})
 	f:SetBackdropColor(1,1,1,0) -- .2
 	f:SetBackdropBorderColor(0,0,0,0) -- 1
 	f:SetPoint("TOPLEFT",_G["Wowshell_Category_"..parent.."Button"],"BOTTOMLEFT")
@@ -300,7 +300,7 @@ end
 function GUI:CategoryChildFrameButtons(parent,index)
 	local button = CreateFrame("Button","Wowshell_Category"..parent.."_ChildFrame_Button"..index,_G["Wowshell_Category"..parent.."_ChildFrame"])
 	button:SetSize(50,50)
-	button:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1,insets={top = 2, bottom = -2,left = 2,right = 2}})
+	button:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1.1,insets={top = 2, bottom = -2,left = 2,right = 2}})
 	button:SetBackdropColor(.3,.3,.3,.2)
 	button:SetBackdropBorderColor(0,0,0,1)
 	button.bg = button:CreateTexture(nil,"OVERLAY")
@@ -339,7 +339,7 @@ function GUI:TipFrame()
 	f:SetPoint("CENTER",mf)
 	f:SetFrameLevel(mf:GetFrameLevel() + 10)
 	--f:SetPoint("TOPLEFT",mf,"BOTTOMLEFT",0,-20)
-	f:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1,insets={top = 0, bottom = 0,left = 0,right = 0}})
+	f:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1.1,insets={top = 0, bottom = 0,left = 0,right = 0}})
 	f:SetBackdropColor(.1,.1,.1,.5)
 	f:SetBackdropBorderColor(0,0,0,1)
 	f.text = f:CreateFontString(nil,"OVERLAY","ChatFontNormal")
@@ -459,7 +459,7 @@ function GUI:SearchResultButtons()
 	for i = 1, 25 do
 		local button = CreateFrame("Button","Wowshell_SearchResult_Button"..i,scf)
 		button:SetSize(50,50)
-		button:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1,insets={top = 2, bottom = -2,left = 2,right = 2}})
+		button:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1.1,insets={top = 2, bottom = -2,left = 2,right = 2}})
 		button:SetBackdropColor(.3,.3,.3,.2)
 		button:SetBackdropBorderColor(0,0,0,1)
 		button.bg = button:CreateTexture(nil,"OVERLAY")
@@ -557,7 +557,7 @@ function GUI:MouseOverTipFrame()
 	f.nextFlag = 1
 	f:SetFrameLevel(mf:GetFrameLevel()+8)
 	f:SetSize(400,150)
-	f:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1,insets={top = 0, bottom = 0,left = 0,right = 0}})
+	f:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1.1,insets={top = 0, bottom = 0,left = 0,right = 0}})
 	f:SetBackdropColor(.1,.1,.1,.8)
 	f:SetBackdropBorderColor(0,0,0,1)
 	f.addonName = f:CreateFontString(nil,"OVERLAY","ChatFontNormal")
@@ -824,7 +824,7 @@ end
 function GUI:CheckBox(name,point,parent) --,getter,setter)
 	local button = CreateFrame("Button",name,parent)
 	button:SetSize(16,16)
-	button:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1,insets={top = -1, bottom = 1,left = 1,right = -1}})
+	button:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1.1,insets={top = -1, bottom = 1,left = 1,right = -1}})
 	button:SetBackdropColor(.1,.1,.1,.5)
 	button:SetBackdropBorderColor(1,1,1,1)
 	button:SetPoint(unpack(point))
@@ -891,7 +891,7 @@ function GUI:SlideBar(name,point,parent)
 	btnp.title:SetText(L[name])
 
 	button:SetSize(14,10)
-	button:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1,insets={top = 0, bottom = 0,left = 0,right = 0}})
+	button:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1.1,insets={top = 0, bottom = 0,left = 0,right = 0}})
 	button:SetBackdropColor(1,1,1,1)
 	button:SetBackdropBorderColor(0,0,0,1)
 	button:SetPoint("CENTER",btnp)
@@ -968,7 +968,7 @@ function GUI:RadioButton(name,buttons,point,parent)
 		local v = buttons[i]	
 		
 		buttons[i] = CreateFrame("Button",name..buttons[i],parent)
-		buttons[i]:SetSize(20,10)
+		buttons[i]:SetSize(32,16)
 		if i == 1 then
 			buttons[i]:SetPoint(unpack(point))
 			buttons[i].title = buttons[i]:CreateFontString(nil,"OVERLAY","ChatFontNormal")
@@ -982,14 +982,19 @@ function GUI:RadioButton(name,buttons,point,parent)
 			buttons[i]:SetPoint("LEFT",buttons[i-1],"RIGHT",20,0)
 		end
 
-		buttons[i]:SetBackdrop({bgFile = bgTex,edgeFile = bgTex, edgeSize = 1.05,insets={top = -1, bottom = 1,left = 1,right = -1}})
-		buttons[i]:SetBackdropColor(.1,.1,.1,.5)
-		buttons[i]:SetBackdropBorderColor(1,1,1,1)
+		buttons[i].bg = buttons[i]:CreateTexture(nil,"OVERLAY")
+		buttons[i].bg:SetTexture(tex.."unchecked.tga")
+		buttons[i].bg:SetAllPoints(buttons[i])
+
+		buttons[i].back = buttons[i]:CreateTexture(nil,"ARTWORK")
+		buttons[i].back:SetTexture(bgTex)
+		buttons[i].back:SetPoint("TOPLEFT",buttons[i],6,-3)
+		buttons[i].back:SetPoint("BOTTOMRIGHT",buttons[i],-6,3)
+		buttons[i].back:SetVertexColor(.1,.1,.1,.5)
 		
 		buttons[i].check = buttons[i]:CreateTexture(nil,"OVERLAY")
-		buttons[i].check:SetTexture(bgTex)
-		buttons[i].check:SetPoint("TOPLEFT",buttons[i],2,-2)
-		buttons[i].check:SetPoint("BOTTOMRIGHT",buttons[i],-2,2)
+		buttons[i].check:SetTexture(tex.."checked.tga")
+		buttons[i].check:SetAllPoints(buttons[i])
 		buttons[i].check:SetVertexColor(1,1,1,1)
 		buttons[i].check:Hide()	
 		buttons[i].value = buttons[i]:CreateFontString(nil,"OVERLAY","ChatFontNormal")
@@ -1205,11 +1210,11 @@ function GUI:RadioButton(name,buttons,point,parent)
 			end
 		end)
 		buttons[i]:SetScript("OnEnter",function(self)
-			self:SetBackdropBorderColor(1,.5,.25)
+			self.bg:SetVertexColor(1,.5,.25)
 			self.check:SetVertexColor(1,.5,.25)
 		end)
 		buttons[i]:SetScript("OnLeave",function(self)
-			self:SetBackdropBorderColor(1,1,1,1)
+			self.bg:SetVertexColor(1,1,1,1)
 			self.check:SetVertexColor(1,1,1,1)
 		end)
 	end

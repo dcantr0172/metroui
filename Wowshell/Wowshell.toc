@@ -8,8 +8,8 @@
 ## Notes-zhTW: 魔獸精靈控制核心
 
 
-## X-Version: 4.3.4.2760
-## X-UpdateDate: 2012-05-10
+## X-Version: 4.3.4.2762
+## X-UpdateDate: 2012-05-17
 
 wsLocale.lua
 updateLog.lua
